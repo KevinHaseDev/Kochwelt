@@ -2,90 +2,106 @@
     box-sizing: border-box;
     margin: 0;
     font-family: "Raleway", sans-serif;
-    
+
 }
 
 html {
     scroll-behavior: smooth;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 120px;
-    
+
 }
-header img{
+
+header img {
     width: 200;
     height: 60px;
 }
-header a{
+
+header a {
     color: black;
     text-decoration: none;
     padding-left: 10px;
 }
-header a:hover{
+
+header a:hover {
     color: green;
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 8px;
 }
-main{
+
+main {
     padding: 20px 120px;
 }
 
-.kevin{
-        background-color: #f0f0f0;
+.kevin {
+    background-color: #f0f0f0;
 }
-h2{
+
+h2 {
     font-size: 26px;
     text-align: center;
     margin-bottom: 32px;
 }
-.quicklinks{
+
+.quicklinks {
 
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.quicklinks img{
+
+.quicklinks img {
     aspect-ratio: 1/1;
     width: 200px;
     border-radius: 10px;
 }
-.quicklinks img:hover{
-scale: 1.2;
-border-radius: 20px;
+
+.quicklinks img:hover {
+    scale: 1.2;
+    border-radius: 20px;
 }
-footer{
+
+footer {
     background-color: #403b3b;
     height: 200px;
-    
+
 }
-h1{
+
+h1 {
     margin-bottom: 20px;
 }
-.recipe{
+
+.recipe {
     background-image: url(./img/gourmet-5619887_640.jpg);
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: 100%;
-   height: 200px;
-   margin-bottom: 20px;
-   border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
-h3{
+
+h3 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-table{
+
+table {
     width: 100%;
 }
-td{
+
+td {
     padding: 10px 20px;
     border-radius: 10px;
 }
+
 tr:nth-child(even) {
-  background-color: #f0f0f0;
-back
+    background-color: #f0f0f0;
+
 }
