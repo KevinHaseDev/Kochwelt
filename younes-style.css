@@ -1,0 +1,94 @@
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+
+h2 {
+    font-size: 37px;
+    font-weight: 600;
+    margin: 0;
+}
+
+p {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.section-one {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 100px 15px;
+}
+
+.section-one-img {
+    width: 37%;
+    height: 420px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.Section-one-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 50px;
+    width: 50%;
+}
+
+.button-to-rezept {
+    background-color: #008000;
+    font-size: 25px;
+    color: white;
+    border-style: none;
+    padding: 17px 90px;
+    margin-top: 80px;
+    cursor: pointer;
+}
+
+/* ------------------------------------- */
+@media(max-width:860px) {
+    .section-one {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-one-img {
+        width: 95%;
+        height: 420px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .Section-one-title {
+        padding-left: 0px;
+        padding-top: 50px;
+        width: 95%;
+    }
+
+    .button-to-rezept {
+        align-self: center;
+        margin-top: 30px;
+    }
+}
+
+/* ------------------------------------- */
+@media(max-width:441px) {
+    h2 {
+        font-size: 25px;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .button-to-rezept {
+        font-size: 18px;
+        padding: 17px;
+        width: 100%;
+    }
+}
