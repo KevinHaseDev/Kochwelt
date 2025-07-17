@@ -1,8 +1,15 @@
-* {
-    box-sizing: border-box;
+html,
+body {
+    height: 100%;
     margin: 0;
-    
+}
 
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+main {
+    padding: 0 120px;
 }
 
 @font-face {
@@ -18,10 +25,6 @@
     font-weight: 100 900;
     font-style: italic;
 }
-html {
-    scroll-behavior: smooth;
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -48,81 +51,23 @@ header a:hover {
     text-underline-offset: 8px;
 }
 
-
-.section-one {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 100px 15px;
+main {
+    flex: 1;
 }
-
-.section-one-img {
-    width: 37%;
-    height: 420px;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-.Section-one-title {
+/* 
+.wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-left: 50px;
-    width: 50%;
-}
+    min-height: 100vh;
+} */
 
-.button-to-rezept {
-    background-color: #008000;
-    font-size: 25px;
-    color: white;
-    border-style: none;
-    padding: 17px 90px;
-    margin-top: 80px;
-    cursor: pointer;
-}
-
-
-.kevin {
-    background-color: #efefef;
-    padding: 20px 120px;
-   
-}
-     
-
-h2 {
-    font-size: 26px;
-    text-align: center;
-    margin-bottom: 32px;
-}
-
-.quicklinks {
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-figcaption{
-    text-align: center;
-}
-.quicklinks img {
-    aspect-ratio: 1/1;
-    width: 200px;
-    border-radius: 10px;
-    
-}
-
-.quicklinks img:hover {
-    scale: 1.2;
-    border-radius: 20px;
-}
 .social-media {
     width: 40px;
     height: auto;
     filter: invert(100%) brightness(200%);
     transition: filter 250ms ease;
 }
+
 .social-media:hover {
     filter: drop-shadow(0px 0px 5px #f7f5f3);
 }
@@ -170,11 +115,6 @@ footer {
     margin-top: 80px;
 }
 
-.good-to-know{
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-bottom: 100px;
-}
 .good-to-know-img {
     height: 240px;
     aspect-ratio: 1 / 1;
@@ -196,60 +136,69 @@ footer {
     width: 70%;
 }
 
-h1 {
-    margin-bottom: 20px;
-    font-size: 26px;
-    font-weight: 400;
-}
+/* Hauptgericht Rezept */
 
-.recipe {
-    background-image: url(./img/gourmet-5619887_640.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 150px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
-h3 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-table {
+.pasta-arrabbiata-img {
     width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 6px;
 }
 
-td {
-    padding: 10px 20px;
-    border-radius: 10px;
+.facts {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0 80px 0;
 }
 
-tr:nth-child(even) {
-    background-color: #f0f0f0;
-
+.fact-text {
+    display: flex;
+    gap: 10px;
+    background-color: #efefef;
+    padding: 4px 8px;
+    border-radius: 8px;
 }
 
-h4 {
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.fact-icon {
+    width: 12px;
+    height: auto;
 }
 
-.profile {
+.seperator-line {
+    background-color: #efefef;
+    object-fit: cover;
+    height: 2px;
+}
+
+.input-container {
     display: flex;
     align-items: center;
+    padding: 10px 0;
 }
 
-.profile img {
-    width: 100px;
-    border-radius: 100%;
-    aspect-ratio: 1/1;
+form {
+    display: flex;
+    margin-left: 10px;
 }
-span{
-    text-align: center;
-    font-size: 20px;
-    padding-left: 20px;
-    color: grey;
+
+input {
+    padding: 5px 20px 5px 0;
+    border: 1px solid #efefef;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.input-btn {
+    background-color: #008000;
+    color: white;
+    padding: 6px 24px;
+    border: none;
+    text-decoration: none;
+}
+
+.grey-row {
+    background-color: #efefef;
+    ;
 }
