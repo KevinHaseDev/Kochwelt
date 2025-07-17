@@ -1,7 +1,8 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    
+    font-family: "Raleway",sans-serif;
+
 
 }
 
@@ -18,6 +19,7 @@
     font-weight: 100 900;
     font-style: italic;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -86,9 +88,9 @@ header a:hover {
 .kevin {
     background-color: #efefef;
     padding: 20px 120px;
-   
+
 }
-     
+
 
 h2 {
     font-size: 26px;
@@ -103,26 +105,29 @@ h2 {
     align-items: center;
 }
 
-figcaption{
+figcaption {
     text-align: center;
 }
+
 .quicklinks img {
     aspect-ratio: 1/1;
     width: 200px;
     border-radius: 10px;
-    
+
 }
 
 .quicklinks img:hover {
     scale: 1.2;
     border-radius: 20px;
 }
+
 .social-media {
     width: 40px;
     height: auto;
     filter: invert(100%) brightness(200%);
     transition: filter 250ms ease;
 }
+
 .social-media:hover {
     filter: drop-shadow(0px 0px 5px #f7f5f3);
 }
@@ -170,11 +175,12 @@ footer {
     margin-top: 80px;
 }
 
-.good-to-know{
+.good-to-know {
     padding-left: 120px;
     padding-right: 120px;
     padding-bottom: 100px;
 }
+
 .good-to-know-img {
     height: 240px;
     aspect-ratio: 1 / 1;
@@ -247,7 +253,8 @@ h4 {
     border-radius: 100%;
     aspect-ratio: 1/1;
 }
-span{
+
+span {
     text-align: center;
     font-size: 20px;
     padding-left: 20px;

@@ -25,6 +25,7 @@ main {
     font-weight: 100 900;
     font-style: italic;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -54,6 +55,7 @@ header a:hover {
 main {
     flex: 1;
 }
+
 /* 
 .wrapper {
     display: flex;
