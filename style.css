@@ -1,179 +1,133 @@
-html,
-body {
-    height: 100%;
+* {
+    box-sizing: border-box;
     margin: 0;
+    font-family: "Raleway", sans-serif;
+
 }
 
-body {
-    font-family: 'Raleway', sans-serif;
+html {
+    scroll-behavior: smooth;
 }
 
-main {
-    padding: 0 120px;
-}
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('./fonts/Raleway-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('./fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: italic;
-}
-
-main {
-    flex: 1;
-}
-
-.wrapper {
+header {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+
 }
 
-.social-media {
-    width: 40px;
-    height: auto;
-    filter: invert(100%) brightness(200%);
-    transition: filter 250ms ease;
+header img {
+    width: 200;
+    height: 60px;
 }
 
-.social-media:hover {
-    filter: drop-shadow(0px 0px 5px #f7f5f3);
+header a {
+    color: black;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+header a:hover {
+    color: green;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+}
+
+main {
+    padding: 20px 120px;
+}
+
+.kevin {
+    background-color: #f0f0f0;
+}
+
+h2 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.quicklinks {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.quicklinks img {
+    aspect-ratio: 1/1;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.quicklinks img:hover {
+    scale: 1.2;
+    border-radius: 20px;
 }
 
 footer {
-    padding: 80px;
     background-color: #403b3b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    height: 200px;
+
 }
 
-.social-media-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
+h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 400;
 }
 
-.legal-section a {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    transition: color 250ms ease;
-    font-weight: bold;
+.recipe {
+    background-image: url(./img/gourmet-5619887_640.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
-.legal-section {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    padding-top: 30px;
-    border-radius: 6px;
-    transition: background-color 250ms ease, color 250ms ease-in-out;
+h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.legal-section a:hover,
-.legal-section a:focus {
-    color: black;
-    filter: drop-shadow(0px 0px 5px #f7f5f3);
-}
-
-.headline-good-to-know {
-    text-align: center;
-    margin-top: 80px;
-}
-
-.good-to-know-img {
-    height: 240px;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 6px;
-}
-
-.text-img-good-to-know {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 80px;
-}
-
-.img-width-30 {
-    width: 30%;
-}
-
-.text-width-70 {
-    width: 70%;
-}
-
-/* Hauptgericht Rezept */
-
-.pasta-arrabbiata-img {
+table {
     width: 100%;
-    height: 190px;
-    object-fit: cover;
-    border-radius: 6px;
 }
 
-.facts {
-    display: flex;
-    gap: 20px;
-    padding: 20px 0 80px 0;
+td {
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
-.fact-text {
-    display: flex;
-    gap: 10px;
-    background-color: #efefef;
-    padding: 4px 8px;
-    border-radius: 8px;
+tr:nth-child(even) {
+    background-color: #f0f0f0;
+
 }
 
-.fact-icon {
-    width: 12px;
-    height: auto;
+h4 {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.seperator-line {
-    background-color: #efefef;
-    object-fit: cover;
-    height: 2px;
-}
-
-.input-container {
+.profile {
     display: flex;
     align-items: center;
-    padding: 10px 0;
 }
 
-form {
-    display: flex;
-    margin-left: 10px;
+.profile img {
+    width: 100px;
+    border-radius: 100%;
+    aspect-ratio: 1/1;
 }
 
-input {
-    padding: 5px 20px 5px 0;
-    border: 1px solid #efefef;
-}
-
-input::placeholder {
-    color: black;
-}
-
-.input-btn {
-    background-color: #008000;
-    color: white;
-    padding: 6px 24px;
-    border: none;
-    text-decoration: none;
-}
-
-.grey-row {
-    background-color: #efefef;
-    ;
+span {
+    text-align: center;
+    font-size: 20px;
+    padding-left: 20px;
+    color: grey;
 }
