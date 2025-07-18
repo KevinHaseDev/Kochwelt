@@ -51,6 +51,11 @@ header a:hover {
     text-decoration-thickness: 3px;
     text-underline-offset: 8px;
 }
+.seperator-line-header {
+    background-color: #efefef;
+    object-fit: cover;
+    height: 4px;
+}
 
 main {
     flex: 1;
