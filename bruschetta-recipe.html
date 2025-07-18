@@ -5,37 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bruschetta Rezept</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bruschetta-style.css">
+    <script src="rechner.js"></script>
 </head>
 
 <body>
     <header>
-        <img src="./img/logo.png" alt="Kochwelt Logo">
+        <a href="./index.html"><img src="./img/logo.png" alt="Kochwelt Logo" /></a>
+         <!-- Burger Icon -->
+  <div id="burger" class="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
         <nav class="links">
             <a href="./index.html">Start</a>
-            <a href="./bruschetta_recipe.html">Rezept des Tages</a>
-            <a href="footer">Kontakt</a>
-            <a href="">Impressum</a>
+            <a href="./bruschetta-recipe.html">Rezept des Tages</a>
+            <a href="./kontakt.html">Kontakt</a>
+            <a href="./docs/impressum.pdf" target="_blank">Impressum</a>
         </nav>
     </header>
+    <div class="seperator-line-header"></div>
     <main>
         <h1>Bruschetta mit Tomaten und Basilikum</h1>
         <div class="recipe"></div>
-        <table>
-            <tr>
-                <td>1 Baguette wahlweise Ciabatta</td>
+        <div class="icon-box">
+            <div class="icon-border"><img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />20-25
+                Min.</div>
+            <div class="icon-border"><img src="./img/icons/brain-solid.svg" alt="brain icon" class="icon" />simpel</div>
+            <div class="icon-border"><img src="./img/icons/calendar-alt-regular.svg" alt="calendar icon"
+                    class="icon" />18.07.2025</div>
+        </div>
+        <div class="seperator-line"></div>
+        <label for="amount"><strong>Zutaten</strong> für:</label>
+        <input id="amount" min="1" max="50" type="number" placeholder="4">
+        <button id="calculate">Portionen</button>
+        <table id="ingredients">
+            <tr data-base="1">
+                <td><span class="quantity">1</span> Baguette wahlweise Ciabatta</td>
             </tr>
-            <tr>
-                <td>4-6 reife Tomaten (z.b. Roma oder Strauchtomaten)</td>
+            <tr data-base="5">
+                <td><span class="quantity">5</span> reife Tomaten (z.b. Roma oder Strauchtomaten)</td>
             </tr>
-            <tr>
-                <td>2-3 Knoblauchzehen</td>
+            <tr data-base="3">
+                <td><span class="quantity">3</span> Knoblauchzehen</td>
             </tr>
-            <tr>
-                <td>1 Bund frisches Basilikum</td>
+            <tr data-base="1">
+                <td><span class="quantity">1</span> Bund frisches Basilikum</td>
             </tr>
-            <tr>
-                <td>3 EL Olivenöl</td>
+            <tr data-base="3">
+                <td><span class="quantity">3</span> EL Olivenöl</td>
             </tr>
             <tr>
                 <td>Salz und Pfeffer nach Geschmack</td>
@@ -46,6 +65,12 @@
         </table>
 
         <h3>Zubereitung</h3>
+       <div class="icon-box">
+        <div class="icon-border"><img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />15
+            Min.</div>
+        <div class="icon-border"><img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />Gesamtzeit ca. 20-25
+            Min.</div>
+            </div>
         <article>
             <p>Schneide die Tomaten klein, entferne dabei die Kerne, und gib sie in eine Schüssel. Hacke den frischen
                 Basilikum sowie eine Knoblauchzehe fein und mische beides unter die Tomaten. Füge Olivenöl hinzu, würze
@@ -64,7 +89,20 @@
         </aside>
     </main>
     <footer>
-
+        <div class="social-media-container">
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                <img src="./img/icons/instagram.svg" alt="Instagram logo" class="social-media" /></a>
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                <img src="./img/icons/facebook.svg" alt="Facebook logo" class="social-media" /></a>
+            <a href="https://x.com/" target="_blank" aria-label="X (formerly Twitter)">
+                <img src="./img/icons/x-twitter.svg" alt="X logo (formerly Twitter)" class="social-media" /></a>
+            <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+                <img src="./img/icons/youtube.svg" alt="YouTube logo" class="social-media" /></a>
+        </div>
+        <div class="legal-section">
+            <a href="./docs/datenschutz.pdf" class="data-privacy" target="_blank">Datenschutz</a>
+            <a href="./docs/impressum.pdf" class="imprint" target="_blank">Impressum</a>
+        </div>
     </footer>
 
 </body>
