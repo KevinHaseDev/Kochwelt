@@ -1,9 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: "Raleway",sans-serif;
-
-
+    font-family: "Raleway", sans-serif;
 }
 
 @font-face {
@@ -29,7 +27,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 120px;
-
 }
 
 header img {
@@ -88,7 +85,6 @@ header a:hover {
 .kevin {
     background-color: #efefef;
     padding: 20px 120px;
-
 }
 
 
@@ -113,7 +109,7 @@ figcaption {
     aspect-ratio: 1/1;
     width: 200px;
     border-radius: 10px;
-
+    object-fit: cover;
 }
 
 .quicklinks img:hover {
@@ -128,7 +124,8 @@ figcaption {
     transition: filter 250ms ease;
 }
 
-.social-media:hover {
+.social-media:hover,
+.social-media:focus {
     filter: drop-shadow(0px 0px 5px #f7f5f3);
 }
 
@@ -176,9 +173,7 @@ footer {
 }
 
 .good-to-know {
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-bottom: 100px;
+    padding: 0 120px 100px 120px;
 }
 
 .good-to-know-img {

@@ -56,13 +56,6 @@ main {
     flex: 1;
 }
 
-/* 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-} */
-
 .social-media {
     width: 40px;
     height: auto;
@@ -195,12 +188,48 @@ input::placeholder {
 .input-btn {
     background-color: #008000;
     color: white;
-    padding: 6px 24px;
+    padding: 8px 32px;
     border: none;
     text-decoration: none;
 }
 
 .grey-row {
     background-color: #efefef;
-    ;
+}
+
+.table-rows {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.preparation {
+    padding-top: 20px;
+}
+
+.facts-bottom {
+    padding: 10px 0 20px 0;
+}
+
+.avatar {
+    height: 60px;
+    width: auto;
+}
+
+.author-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 100px;
+}
+
+.recipe-padding {
+    padding-top: 30px;
 }
