@@ -2,6 +2,11 @@ body {
     font-family: "Raleway", sans-serif;
     margin: 0;
 }
+.seperator-line-header {
+    background-color: #efefef;
+    object-fit: cover;
+    height: 4px;
+}
 
 h2 {
     font-size: 37px;

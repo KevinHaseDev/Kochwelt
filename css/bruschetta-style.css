@@ -1,0 +1,247 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Raleway",sans-serif;
+
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+
+}
+/* Burger-Icon */
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 3px;
+  border: 1px solid lightgrey;
+  background-color: lightgray;
+  border-radius: 3px;
+  padding: 3px;
+}
+.burger span {
+  width: 25px;
+  height: 3px;
+  background: black;
+  display: block;
+  border-radius: 1px solid black;
+  
+}
+
+header img {
+    width: 200;
+    height: 60px;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+header a:hover {
+    color: green;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+}
+
+main{
+    padding: 20px 120px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.recipe {
+    background-image: url(/img/gourmet-5619887_640.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.icon-box{
+    display: flex;
+    gap: 20px;
+    padding: 20px 0 80px 0;
+}
+.icon{
+    width: 16px;
+    height: auto;
+}
+.icon-border{
+    display: flex;
+    gap: 10px;
+    background-color: #efefef;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+.seperator-line-header {
+    background-color: #efefef;
+    object-fit: cover;
+    height: 4px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+input{
+    border-radius: 8px;
+    border-color:#efefef;
+    border-width: 1px;
+    width: 120px;
+    height: 28px;
+    text-align: center;
+    margin-left: 20px;
+    
+}
+#calculate{
+    background-color: green;
+    color: white;
+    padding: 8px 30px;
+    margin-left: 60px;
+    border: 1px;
+}
+.seperator-line{
+    background-color: #efefef;
+    object-fit: cover;
+    height: 2px;
+}
+table {
+    width: 100%;
+}
+
+td {
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f0f0;
+
+}
+
+h4 {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 100px;
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+}
+
+span {
+    text-align: center;
+    font-size: 20px;
+    padding-left: 20px;
+    color: grey;
+}
+footer {
+    padding: 80px;
+    background-color: #403b3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-media-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+.social-media {
+    width: 40px;
+    height: auto;
+    filter: invert(100%) brightness(200%);
+    transition: filter 250ms ease;
+}
+
+.social-media:hover {
+    filter: drop-shadow(0px 0px 5px #f7f5f3);
+}
+
+.legal-section a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 250ms ease;
+    font-weight: bold;
+}
+
+.legal-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 30px;
+    border-radius: 6px;
+    transition: background-color 250ms ease, color 250ms ease-in-out;
+}
+
+.legal-section a:hover,
+.legal-section a:focus {
+    color: black;
+    filter: drop-shadow(0px 0px 5px #f7f5f3);
+}
+@media(max-width:800px){
+    
+    header{
+        padding-right: 20px;
+    }
+    .burger {
+    display: flex;
+  }
+
+  nav.links {
+    display: none;
+    text-align: end;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: white;
+    padding-top: 5px;
+    gap: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  nav.links.open {
+    display: flex;
+  }
+}
