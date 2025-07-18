@@ -10,12 +10,7 @@ body {
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Raleway';
-    src: url('./fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: italic;
-}
+
 
 * {
     box-sizing: border-box;
@@ -106,6 +101,56 @@ textarea {
     padding: 10px 30px;
     cursor: pointer;
     align-self: center;
+}
+/* Footer  */
+.social-media {
+    width: 40px;
+    height: auto;
+    filter: invert(100%) brightness(200%);
+    transition: filter 250ms ease;
+}
+
+.social-media:hover,
+.social-media:focus {
+    filter: drop-shadow(0px 0px 5px #f7f5f3);
+}
+
+footer {
+    padding: 80px;
+    background-color: #403b3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-media-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.legal-section a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 250ms ease;
+    font-weight: bold;
+}
+
+.legal-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 30px;
+    border-radius: 6px;
+    transition: background-color 250ms ease, color 250ms ease-in-out;
+}
+
+.legal-section a:hover,
+.legal-section a:focus {
+    color: black;
+    filter: drop-shadow(0px 0px 5px #f7f5f3);
 }
 
 @media(max-width:635px) {
