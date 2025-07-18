@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bruschetta Rezept</title>
+    <title>Penne all'Arrabbiata</title>
     <link rel="stylesheet" href="./css/bruschetta-style.css">
     <script src="rechner.js"></script>
 </head>
@@ -27,10 +27,12 @@
     </header>
     <div class="seperator-line-header"></div>
     <main>
-        <h1>Bruschetta mit Tomaten und Basilikum</h1>
-        <div class="recipe"></div>
+        <h1>Penne all'Arrabbiata</h1>
+
+        <div class="recipe-penne"></div>
+        
         <div class="icon-box">
-            <div class="icon-border"><img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />20-25
+            <div class="icon-border"><img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />15
                 Min.</div>
             <div class="icon-border"><img src="./img/icons/brain-solid.svg" alt="brain icon" class="icon" />simpel</div>
             <div class="icon-border"><img src="./img/icons/calendar-alt-regular.svg" alt="calendar icon"
@@ -41,34 +43,37 @@
 
         <div class="input-container">
             <form>
-            <label for="amount"><strong>Zutaten für:</strong></label>
-            <input id="amount" min="1" max="50" type="number" placeholder="4">
-            <button id="calculate">Portionen</button>
-        </form>
+                <label for="amount"><strong>Zutaten für:</strong></label>
+                <input id="amount" min="1" max="50" type="number" placeholder="4">
+                <button id="calculate">Portionen</button>
+            </form>
         </div>
 
         <table id="ingredients">
             <tbody>
-            <tr data-base="1">
-                <td><span class="quantity">1</span> Baguette wahlweise Ciabatta</td>
+            <tr data-base="2">
+                <td><span class="quantity">2</span> EL Olivenöl</td>
             </tr>
-            <tr data-base="5">
-                <td><span class="quantity">5</span> reife Tomaten (z.b. Roma oder Strauchtomaten)</td>
+            <tr data-base="2">
+                <td><span class="quantity">2</span> große Knoblauchzehe(n), in dünne Scheiben geschnitten</td>
             </tr>
-            <tr data-base="3">
-                <td><span class="quantity">3</span> Knoblauchzehen</td>
+            <tr data-base="2">
+                <td><span class="quantity">2</span> Chilischote(n), rot, getrocknet</td>
             </tr>
-            <tr data-base="1">
-                <td><span class="quantity">1</span> Bund frisches Basilikum</td>
+            <tr data-base="2">
+                <td><span class="quantity">2</span> Dose/n Tomate(n), geschälte, je 400 g</td>
             </tr>
-            <tr data-base="3">
-                <td><span class="quantity">3</span> EL Olivenöl</td>
-            </tr>
-            <tr>
-                <td>Salz und Pfeffer nach Geschmack</td>
+            <tr data-base="500">
+                <td><span class="quantity">500</span>g Penne, oder Rigatoni</td>
             </tr>
             <tr>
-                <td>Optional: Balsamico-Essig, Morzzarella oder Parmesian</td>
+                <td>Salzwasser</td>
+            </tr>
+            <tr data-base="1">
+                <td><span class="quantity">1</span> Zweig Basilikum - Blätter, zerkleinert</td>
+            </tr>
+            <tr>
+                <td>Salz</td>
             </tr>
             </tbody>
         </table>
@@ -78,23 +83,26 @@
             <div class="icon-border"><img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />15
                 Min.</div>
             <div class="icon-border"><img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />Gesamtzeit
-                ca. 20-25
-                Min.</div>
+                ca. 15 Min.
+            </div>
         </div>
         <article>
-            <p>Schneide die Tomaten klein, entferne dabei die Kerne, und gib sie in eine Schüssel. Hacke den frischen
-                Basilikum sowie eine Knoblauchzehe fein und mische beides unter die Tomaten. Füge Olivenöl hinzu, würze
-                mit Salz und Pfeffer und lass die Mischung etwa 10 bis 15 Minuten ziehen. In der Zwischenzeit schneidest
-                du das Baguette oder Ciabatta in Scheiben und röstest sie im Ofen oder in einer Pfanne goldbraun.
-                Optional kannst du die gerösteten Brotscheiben mit einer halbierten Knoblauchzehe einreiben. Zum Schluss
-                verteilst du die marinierte Tomatenmischung auf dem gerösteten Brot und servierst die Bruschetta direkt.
-                Nach Belieben kannst du sie mit etwas Parmesan oder Mozzarella verfeinern.</p>
+            <p>Das Öl in einem Topf erhitzen. Knoblauch und ganzen Chilischoten darin anbraten, bis der Knoblauch Farbe
+            angenommen hat. Die Tomaten samt Saft und Salz nach Geschmack hinzufügen. Die Sauce 20 Minuten köcheln
+            lassen, bis sie etwas eingekocht ist, dabei die Tomaten mit einem Kochlöffel zerdrücken.</p>
+        <p>
+            In Der Zwischenzeit die Pasta in reichlich kochendem Salzwasser nach Packungsangabe bissfest garen. In ein
+            Sieb schütten und abtropfen lassen, dann zurück in den Topf geben.</p>
+        <p>
+            Unmittelbar vor dem Servieren das Basilikum unter die Sauce mischen. Die Sauce abschmecken, zur Pasta geben
+            und unterheben. Soll die Sauce schärfer werden, einfach die Chilischoten öffnen und die Samen unter die
+            Sauce rühren.</p>
         </article>
         <aside>
             <h4>Rezept erstell von</h4>
             <div class="profile">
-                <img src="./img/profile.png" alt="profile picture">
-                <span>Kevin</span>
+                <img src="./img/avatar-imra.svg" alt="profile picture">
+                <span>Imra</span>
             </div>
         </aside>
     </main>
