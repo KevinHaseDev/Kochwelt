@@ -1,8 +1,7 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
-    font-family: "Raleway",sans-serif;
-
+    font-family: "Raleway", sans-serif;
 }
 
 @font-face {
@@ -11,8 +10,6 @@
     font-weight: 100 900;
     font-style: normal;
 }
-
-
 
 html {
     scroll-behavior: smooth;
@@ -25,24 +22,26 @@ header {
     padding: 20px 120px;
 
 }
+
 /* Burger-Icon */
 .burger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 3px;
-  border: 1px solid lightgrey;
-  background-color: lightgray;
-  border-radius: 3px;
-  padding: 3px;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 3px;
+    border: 1px solid lightgrey;
+    background-color: lightgray;
+    border-radius: 3px;
+    padding: 3px;
 }
+
 .burger span {
-  width: 25px;
-  height: 3px;
-  background: black;
-  display: block;
-  border-radius: 1px solid black;
-  
+    width: 25px;
+    height: 3px;
+    background: black;
+    display: block;
+    border-radius: 1px solid black;
+
 }
 
 header img {
@@ -63,7 +62,7 @@ header a:hover {
     text-underline-offset: 8px;
 }
 
-main{
+main {
     padding: 20px 120px;
 }
 
@@ -82,7 +81,8 @@ h1 {
     margin-bottom: 20px;
     border-radius: 10px;
 }
-.recipe-penne{
+
+.recipe-penne {
     background-image: url(/img/pasta-arrabiata.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -91,7 +91,8 @@ h1 {
     margin-bottom: 20px;
     border-radius: 10px;
 }
-.tiramius-recipe{
+
+.tiramius-recipe {
     background-image: url(/img/tiramisu.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -100,22 +101,26 @@ h1 {
     margin-bottom: 20px;
     border-radius: 10px;
 }
-.icon-box{
+
+.icon-box {
     display: flex;
     gap: 20px;
-    padding: 20px 0 80px 0;
+    padding: 20px 0 60px 0;
 }
-.icon{
+
+.icon {
     width: 16px;
     height: auto;
 }
-.icon-border{
+
+.icon-border {
     display: flex;
     gap: 10px;
     background-color: #efefef;
     padding: 4px 8px;
     border-radius: 8px;
 }
+
 .seperator-line-header {
     background-color: #efefef;
     object-fit: cover;
@@ -126,48 +131,53 @@ h3 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 .input-container {
     display: flex;
     align-items: center;
     padding: 10px 0;
-    
 }
+
 form {
     display: flex;
     margin-left: 10px;
-    
+
 }
-label{
+
+label {
     display: flex;
     align-items: center;
     padding-right: 20px;
 }
 
-input{
-   padding: 5px 20px 5px 0;
+input {
+    padding: 5px 90px 5px 0;
     border: 1px solid #efefef;
     text-align: center;
     border-radius: 8px 0 0 8px;
-    border-color: rgba(0,0,0,0.1);
-    
-    
-    
+    border-color: rgba(0, 0, 0, 0.1);
 }
+
 input::placeholder {
     color: black;
+    font-size: 16px;
 }
-#calculate{
+
+#calculate {
     background-color: #008000;
     color: white;
     padding: 8px 32px;
     border: none;
     text-decoration: none;
+    font-size: 16px;
 }
-.seperator-line{
+
+.seperator-line {
     background-color: #efefef;
     object-fit: cover;
     height: 2px;
 }
+
 table {
     width: 100%;
 }
@@ -177,20 +187,21 @@ td {
     border-radius: 10px;
 }
 
-tr:nth-child(even) {
+tr:nth-child(odd) {
     background-color: #f0f0f0;
 
 }
 
 h4 {
     font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 
 .profile {
     display: flex;
     align-items: center;
+    padding-bottom: 90px;
 }
 
 .profile img {
@@ -203,8 +214,8 @@ span {
     text-align: center;
     font-size: 20px;
     padding-left: 20px;
-    color: grey;
 }
+
 footer {
     padding: 80px;
     background-color: #403b3b;
@@ -219,6 +230,7 @@ footer {
     justify-content: space-around;
     gap: 30px;
 }
+
 .social-media {
     width: 40px;
     height: auto;
@@ -252,29 +264,44 @@ footer {
     color: black;
     filter: drop-shadow(0px 0px 5px #f7f5f3);
 }
-@media(max-width:800px){
-    
-    header{
+
+/* arrabbiata-recipe */
+.quantity {
+    font-size: 16px;
+}
+
+.preparation {
+    margin-bottom: 0;
+}
+
+.padding-bottom {
+    padding-bottom: 40px;
+}
+
+@media(max-width:800px) {
+
+    header {
         padding-right: 20px;
     }
+
     .burger {
-    display: flex;
-  }
+        display: flex;
+    }
 
-  nav.links {
-    display: none;
-    text-align: end;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    background: white;
-    padding-top: 5px;
-    gap: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
+    nav.links {
+        display: none;
+        text-align: end;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: white;
+        padding-top: 5px;
+        gap: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-  nav.links.open {
-    display: flex;
-  }
+    nav.links.open {
+        display: flex;
+    }
 }

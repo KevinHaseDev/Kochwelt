@@ -16,24 +16,44 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* impressum */
+.padding-impressum {
+    padding: 20px;
+}
+
+.impr {
+    padding: 40px 0 20px 0;
+}
+
+.contact {
+    text-align: left;
+    padding-top: 40px;
+}
+
+.credits {
+    padding-top: 20px;
+}
+
 /* Burger-Icon */
 .burger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 3px;
-  border: 1px solid lightgrey;
-  background-color: lightgray;
-  border-radius: 3px;
-  padding: 3px;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 3px;
+    border: 1px solid lightgrey;
+    background-color: lightgray;
+    border-radius: 3px;
+    padding: 3px;
 }
+
 .burger span {
-  width: 25px;
-  height: 3px;
-  background: black;
-  display: block;
-  border-radius: 1px solid black;
-  
+    width: 25px;
+    height: 3px;
+    background: black;
+    display: block;
+    border-radius: 1px solid black;
+
 }
 
 header {
@@ -99,7 +119,8 @@ header a:hover {
     margin-top: 80px;
     cursor: pointer;
 }
-.button-to-rezept:hover{
+
+.button-to-rezept:hover {
     background-color: #093a0b;
 
 }
@@ -127,7 +148,7 @@ h2 {
 figcaption {
     text-align: center;
 }
- 
+
 .quicklinks img {
     aspect-ratio: 1/1;
     width: 200px;
@@ -139,6 +160,7 @@ figcaption {
     scale: 1.2;
     border-radius: 20px;
 }
+
 /* Footer  */
 .social-media {
     width: 40px;
@@ -189,6 +211,7 @@ footer {
     color: black;
     filter: drop-shadow(0px 0px 5px #f7f5f3);
 }
+
 /*Section three*/
 .headline-good-to-know {
     text-align: center;
@@ -219,29 +242,31 @@ footer {
 .text-width-70 {
     width: 70%;
 }
-@media(max-width:800px){
-    
-    header{
+
+@media(max-width:800px) {
+
+    header {
         padding-right: 20px;
     }
+
     .burger {
-    display: flex;
-  }
+        display: flex;
+    }
 
-  nav.links {
-    display: none;
-    text-align: end;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    background: white;
-    padding-top: 5px;
-    gap: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
+    nav.links {
+        display: none;
+        text-align: end;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: white;
+        padding-top: 5px;
+        gap: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-  nav.links.open {
-    display: flex;
-  }
+    nav.links.open {
+        display: flex;
+    }
 }
