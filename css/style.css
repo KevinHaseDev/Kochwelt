@@ -223,7 +223,8 @@ footer {
 }
 
 .good-to-know-img {
-    height: 240px;
+   display: flex;
+    height:240px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 6px;
@@ -233,14 +234,14 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-top: 80px;
-}
-
-.img-width-30 {
-    width: 30%;
+    
 }
 
 .text-width-70 {
+    padding-right: 20px;
+    display: flex;
     width: 70%;
+    align-items: center;
 }
 
 @media(max-width:800px) {
