@@ -1,146 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza Frutti di Mare</title>
-    <link rel="stylesheet" href="./css/bruschetta-style.css">
+    <link rel="stylesheet" href="./css/bruschetta-style.css" />
     <script src="rechner.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <a href="./index.html"><img src="./img/logo.png" alt="Kochwelt Logo" /></a>
-        <!-- Burger Icon -->
-        <div id="burger" class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <nav class="links">
-            <a href="./index.html">Start</a>
-            <a href="./pizza-recipe.html">Rezept des Tages</a>
-            <a href="./kontakt.html">Kontakt</a>
-            <a href="./docs/impressum.pdf" target="_blank">Impressum</a>
-        </nav>
+        <section class="header-width">
+      <a href="./index.html"
+        ><img src="./img/logo.png" alt="Kochwelt Logo"
+      /></a>
+      <!-- Burger Icon -->
+      <div id="burger" class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="links">
+        <a href="./index.html">Start</a>
+        <a href="./pizza-recipe.html">Rezept des Tages</a>
+        <a href="./kontakt.html">Kontakt</a>
+        <a href="./docs/impressum.pdf" target="_blank">Impressum</a>
+      </nav>
+      </section>
     </header>
+
     <div class="seperator-line-header"></div>
     <main>
+      <section class="main-width">
         <h1>Pizza Frutti di Mare</h1>
         <div class="recipe-pizza"></div>
         <div class="icon-box">
-            <div class="icon-border"><img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />8-9 Std.
-            </div>
-            <div class="icon-border"><img src="./img/icons/brain-solid.svg" alt="brain icon" class="icon" />simpel</div>
-            <div class="icon-border"><img src="./img/icons/calendar-alt-regular.svg" alt="calendar icon"
-                    class="icon" />18.07.2025</div>
+          <div class="icon-border">
+            <img
+              src="./img/icons/clock-regular.svg"
+              alt="clock icon"
+              class="icon"
+            />8-9 Std.
+          </div>
+          <div class="icon-border">
+            <img
+              src="./img/icons/brain-solid.svg"
+              alt="brain icon"
+              class="icon"
+            />simpel
+          </div>
+          <div class="icon-border">
+            <img
+              src="./img/icons/calendar-alt-regular.svg"
+              alt="calendar icon"
+              class="icon"
+            />18.07.2025
+          </div>
         </div>
 
         <div class="seperator-line"></div>
 
         <div class="input-container">
-            <label for="amount"><strong>Zutaten für:</strong></label>
-            <input id="amount" min="1" max="50" type="number" placeholder="4">
-            <button id="calculate">Portionen</button>
+          <label for="amount"><strong>Zutaten für:</strong></label>
+          <div class="res-input">
+          <input id="amount" min="1" max="50" type="number" placeholder="4" />
+          <button id="calculate">Portionen</button>
+          </div>
         </div>
 
         <table id="ingredients">
-            <tbody>
-                <tr data-base="500">
-                    <td><span class="quantity">500</span>g Weizenmehl Type 00 (alternativ: Type 405)</td>
-                </tr>
-                <tr data-base="325">
-                    <td><span class="quantity">325</span>ml lauwarmes Wasser</td>
-                </tr>
-                <tr data-base="10">
-                    <td><span class="quantity">10</span>g Salz</td>
-                </tr>
-                <tr data-base="2">
-                    <td><span class="quantity">2</span>g Trockenhefe (oder 6 g frische Hefe)</td>
-                </tr>
-                <tr data-base="1">
-                    <td><span class="quantity">1</span> EL Olivenöl (optinal)</td>
-                </tr>
-                <tr data-base="200">
-                    <td><span class="quantity">200</span>g passierte Tomaten (San Marzano empfohlen)</td>
-                </tr>
-                <tr data-base="1">
-                    <td><span class="quantity">1</span> TL Oregano (getrocknet)</td>
-                </tr>
-                <tr data-base="1">
-                    <td><span class="quantity">1</span>Knoblauchzehe, fein gehackt</td>
-                </tr>
-                <tr data-base="250">
-                    <td><span class="quantity">250</span>g Meeresfrüchte-Mix (z.B. Garnelen, Tintenfisch, Muscheln) -
-                        frisch oder aufgetaut</td>
-                </tr>
-                <tr data-base="150">
-                    <td><span class="quantity">150</span>g Mozzarella (am besten Fior di Latte)</td>
-                </tr>
-                <tr>
-                    <td>Salz und Pfeffer nach Geschmack</td>
-                </tr>
-                <tr>
-                    <td>Frische Petersilie, gehackt</td>
-                </tr>
-                <tr>
-                    <td>Olivenöl extra vergine</td>
-                </tr>
-            </tbody>
+          <tbody>
+            <tr data-base="500">
+              <td>
+                <span class="quantity">500</span>g Weizenmehl Type 00
+                (alternativ: Type 405)
+              </td>
+            </tr>
+            <tr data-base="325">
+              <td><span class="quantity">325</span>ml lauwarmes Wasser</td>
+            </tr>
+            <tr data-base="10">
+              <td><span class="quantity">10</span>g Salz</td>
+            </tr>
+            <tr data-base="2">
+              <td>
+                <span class="quantity">2</span>g Trockenhefe (oder 6 g frische
+                Hefe)
+              </td>
+            </tr>
+            <tr data-base="1">
+              <td><span class="quantity">1</span> EL Olivenöl (optinal)</td>
+            </tr>
+            <tr data-base="200">
+              <td>
+                <span class="quantity">200</span>g passierte Tomaten (San
+                Marzano empfohlen)
+              </td>
+            </tr>
+            <tr data-base="1">
+              <td><span class="quantity">1</span> TL Oregano (getrocknet)</td>
+            </tr>
+            <tr data-base="1">
+              <td>
+                <span class="quantity">1</span>Knoblauchzehe, fein gehackt
+              </td>
+            </tr>
+            <tr data-base="250">
+              <td>
+                <span class="quantity">250</span>g Meeresfrüchte-Mix (z.B.
+                Garnelen, Tintenfisch, Muscheln) - frisch oder aufgetaut
+              </td>
+            </tr>
+            <tr data-base="150">
+              <td>
+                <span class="quantity">150</span>g Mozzarella (am besten Fior di
+                Latte)
+              </td>
+            </tr>
+            <tr>
+              <td>Salz und Pfeffer nach Geschmack</td>
+            </tr>
+            <tr>
+              <td>Frische Petersilie, gehackt</td>
+            </tr>
+            <tr>
+              <td>Olivenöl extra vergine</td>
+            </tr>
+          </tbody>
         </table>
 
         <h3>Zubereitung</h3>
         <div class="icon-box">
-            <div class="icon-border"><img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />40Min.
-            </div>
-            <div class="icon-border"><img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />Gesamtzeit
-                ca. 8-9Std.</div>
+          <div class="icon-border">
+            <img
+              src="./img/icons/clock-regular.svg"
+              alt="clock icon"
+              class="icon"
+            />40Min.
+          </div>
+          <div class="icon-border">
+            <img
+              src="./img/icons/clock-regular.svg"
+              alt="clock icon"
+              class="icon"
+            />Gesamtzeit ca. 8-9Std.
+          </div>
         </div>
         <article>
-            <p>Zuerst bereitest du den Pizzateig vor. Vermische dafür das Mehl mit der in lauwarmem Wasser aufgelösten
-                Hefe. Gib das Salz und wenn gewünscht etwas Olivenöl hinzu und verknete alles zu einem geschmeidigen
-                Teig. Diesen lässt du etwa eine Stunde bei Raumtemperatur abgedeckt ruhen. Danach formst du zwei
-                Teigkugeln, legst sie in eine leicht geölte Schüssel und lässt sie mindestens 6-8 Stunden im Kühlschrank
-                ruhen, idealerweise über Nacht. Etwa eine Stunde vor dem Weiterverarbeiten nimmst du den Teig aus dem
-                Kühlschrank, damit er Zimmertemperatur annehmen kann. In der Zwischenzeit heizt du den Backofen auf die
-                höchste Stufe (250-300 °C) vor, idealerweise mit einem Pizzastein oder einem vorgeheizten Blech, damit
-                der Boden besonders knusprig wird. Für die Tomatensauce vermengst du passierte Tomaten mit etwas
-                gehacktem Knoblauch, Oregano sowie Salz und Pfeffer. Diese Sauce musst du nicht vorkochen sie kommt
-                direkt roh auf den Teig. Nun rollst du die Teigkugeln auf einer bemehlten Fläche rund aus oder ziehst
-                sie vorsichtig mit den Händen in Form. Verteile die Tomatensauce gleichmäßig darauf und zupfe den
-                Mozzarella in kleine Stücke, die du ebenfalls auf der Pizza verteilst. Die Meeresfrüchte ob frisch
-                oder aufgetaut solltest du gut abtropfen lassen und nach Belieben mit etwas Olivenöl und Knoblauch
-                marinieren. Verteile sie anschließend auf der Pizza. Nun backst du die Pizza für etwa 6-8 Minuten, bis
-                der Rand goldbraun und knusprig ist und der Käse geschmolzen ist. Nach dem Backen bestreust du die Pizza
-                mit frisch gehackter Petersilie und träufelst etwas Olivenöl darüber. Sofort heiß servieren, buon
-                appetito!</p>
+          <p>
+            Zuerst bereitest du den Pizzateig vor. Vermische dafür das Mehl mit
+            der in lauwarmem Wasser aufgelösten Hefe. Gib das Salz und wenn
+            gewünscht etwas Olivenöl hinzu und verknete alles zu einem
+            geschmeidigen Teig. Diesen lässt du etwa eine Stunde bei
+            Raumtemperatur abgedeckt ruhen. Danach formst du zwei Teigkugeln,
+            legst sie in eine leicht geölte Schüssel und lässt sie mindestens
+            6-8 Stunden im Kühlschrank ruhen, idealerweise über Nacht. Etwa eine
+            Stunde vor dem Weiterverarbeiten nimmst du den Teig aus dem
+            Kühlschrank, damit er Zimmertemperatur annehmen kann. In der
+            Zwischenzeit heizt du den Backofen auf die höchste Stufe (250-300
+            °C) vor, idealerweise mit einem Pizzastein oder einem vorgeheizten
+            Blech, damit der Boden besonders knusprig wird. Für die Tomatensauce
+            vermengst du passierte Tomaten mit etwas gehacktem Knoblauch,
+            Oregano sowie Salz und Pfeffer. Diese Sauce musst du nicht vorkochen
+            sie kommt direkt roh auf den Teig. Nun rollst du die Teigkugeln auf
+            einer bemehlten Fläche rund aus oder ziehst sie vorsichtig mit den
+            Händen in Form. Verteile die Tomatensauce gleichmäßig darauf und
+            zupfe den Mozzarella in kleine Stücke, die du ebenfalls auf der
+            Pizza verteilst. Die Meeresfrüchte ob frisch oder aufgetaut solltest
+            du gut abtropfen lassen und nach Belieben mit etwas Olivenöl und
+            Knoblauch marinieren. Verteile sie anschließend auf der Pizza. Nun
+            backst du die Pizza für etwa 6-8 Minuten, bis der Rand goldbraun und
+            knusprig ist und der Käse geschmolzen ist. Nach dem Backen bestreust
+            du die Pizza mit frisch gehackter Petersilie und träufelst etwas
+            Olivenöl darüber. Sofort heiß servieren, buon appetito!
+          </p>
         </article>
         <aside>
-            <h4>Rezept erstell von</h4>
-            <div class="profile">
-                <img src="./img/profile.png" alt="profile picture">
-                <span>Kevin</span>
-            </div>
+          <h4>Rezept erstell von</h4>
+          <div class="profile">
+            <img src="./img/profile.png" alt="profile picture" />
+            <span>Kevin</span>
+          </div>
         </aside>
+      </section>
     </main>
     <footer>
-        <div class="social-media-container">
-            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
-                <img src="./img/icons/instagram.svg" alt="Instagram logo" class="social-media" /></a>
-            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
-                <img src="./img/icons/facebook.svg" alt="Facebook logo" class="social-media" /></a>
-            <a href="https://x.com/" target="_blank" aria-label="X (formerly Twitter)">
-                <img src="./img/icons/x-twitter.svg" alt="X logo (formerly Twitter)" class="social-media" /></a>
-            <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
-                <img src="./img/icons/youtube.svg" alt="YouTube logo" class="social-media" /></a>
-        </div>
-        <div class="legal-section">
-            <a href="./docs/datenschutz.pdf" class="data-privacy" target="_blank">Datenschutz</a>
-            <a href="./docs/impressum.pdf" class="imprint" target="_blank">Impressum</a>
-        </div>
+      <div class="social-media-container">
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <img
+            src="./img/icons/instagram.svg"
+            alt="Instagram logo"
+            class="social-media"
+        /></a>
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          aria-label="Facebook"
+        >
+          <img
+            src="./img/icons/facebook.svg"
+            alt="Facebook logo"
+            class="social-media"
+        /></a>
+        <a
+          href="https://x.com/"
+          target="_blank"
+          aria-label="X (formerly Twitter)"
+        >
+          <img
+            src="./img/icons/x-twitter.svg"
+            alt="X logo (formerly Twitter)"
+            class="social-media"
+        /></a>
+        <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+          <img
+            src="./img/icons/youtube.svg"
+            alt="YouTube logo"
+            class="social-media"
+        /></a>
+      </div>
+      <div class="legal-section">
+        <a href="./docs/datenschutz.pdf" class="data-privacy" target="_blank"
+          >Datenschutz</a
+        >
+        <a href="./docs/impressum.pdf" class="imprint" target="_blank"
+          >Impressum</a
+        >
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>

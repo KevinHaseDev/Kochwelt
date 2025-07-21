@@ -1,14 +1,13 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: "Raleway", sans-serif;
-}
-
 @font-face {
     font-family: 'Raleway';
     src: url('./fonts/Raleway-VariableFont_wght.ttf') format('truetype');
     font-weight: 100 900;
     font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
 }
 
 html {
@@ -17,10 +16,16 @@ html {
 
 header {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header-width {
+    width: 80%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 120px;
-
 }
 
 /* Burger-Icon */
@@ -49,7 +54,7 @@ header img {
     height: 60px;
 }
 
-header a {
+nav a {
     color: black;
     text-decoration: none;
     padding-left: 10px;
@@ -63,7 +68,13 @@ header a:hover {
 }
 
 main {
-    padding: 20px 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-width {
+    width: 80%;
 }
 
 h1 {
@@ -101,7 +112,8 @@ h1 {
     margin-bottom: 20px;
     border-radius: 10px;
 }
-.recipe-pizza{
+
+.recipe-pizza {
     background-image: url(/img/pizza-frutti-di-mare.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -110,7 +122,8 @@ h1 {
     margin-bottom: 20px;
     border-radius: 10px;
 }
-.recipe-panna-cotta{
+
+.recipe-panna-cotta {
     background-image: url(/img/panna-cotta.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -123,7 +136,7 @@ h1 {
 .icon-box {
     display: flex;
     gap: 20px;
-    padding: 20px 0 60px 0;
+    padding-bottom: 60px;
 }
 
 .icon {
@@ -154,7 +167,10 @@ h3 {
     display: flex;
     align-items: center;
     padding: 10px 0;
-    margin-left: 10px;
+}
+
+.res-input {
+    display: flex;
 }
 
 label {
@@ -164,12 +180,12 @@ label {
 }
 
 input {
-    padding: 5px 0px 5px 0;
     border: 1px solid #efefef;
     text-align: center;
     border-radius: 8px 0 0 8px;
     border-color: rgba(0, 0, 0, 0.1);
-    width: 150px;
+    width: 100px;
+    height: 34px;
 }
 
 input::placeholder {
@@ -292,12 +308,7 @@ footer {
     padding-bottom: 40px;
 }
 
-@media(max-width:800px) {
-
-    header {
-        padding-right: 20px;
-    }
-
+@media(max-width:678px) {
     .burger {
         display: flex;
     }
@@ -317,5 +328,31 @@ footer {
 
     nav.links.open {
         display: flex;
+    }
+
+    .icon-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .input-container {}
+
+    #calculate {
+        flex: 1;
+    }
+
+    .res-input {
+        flex: 1;
+    }
+}
+
+@media(max-width: 470px) {
+    .input-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .res-input {
+        padding-top: 10px;
+        width: 100%;
     }
 }
