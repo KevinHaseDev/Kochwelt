@@ -67,6 +67,12 @@ header img {
     width: 200;
     height: 60px;
 }
+.links{
+    height: 104px;
+    display: flex;
+    align-items: flex-end;
+    
+}
 
 header a {
     color: black;
