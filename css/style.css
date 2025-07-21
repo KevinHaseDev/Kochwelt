@@ -94,7 +94,7 @@ header a:hover {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin: 100px 15px;
+    padding: 100px 120px;
 }
 
 .section-one-img {
@@ -110,7 +110,7 @@ header a:hover {
     justify-content: flex-start;
     align-items: flex-start;
     padding-left: 50px;
-    width: 50%;
+    
 }
 
 .button-to-rezept {

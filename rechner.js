@@ -20,14 +20,34 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-/* Burger-menu */
-
+/* Burger-Menü */
 
 document.addEventListener("DOMContentLoaded", () => {
-    const burger = document.getElementById("burger");
-    const nav = document.querySelector("nav.links");
+  const burger = document.getElementById("burger");
+  const nav = document.querySelector("nav.links");
 
-    burger.addEventListener("click", () => {
+  if (burger && nav) {
+    // Öffnen/Schließen per Burger-Klick
+    burger.addEventListener("click", (e) => {
+      e.stopPropagation(); // Verhindert das sofortige Schließen
       nav.classList.toggle("open");
+
+      // Aria-Attribut für Barrierefreiheit
+      const expanded = nav.classList.contains("open");
+      burger.setAttribute("aria-expanded", expanded);
     });
-  });
+
+    // Klick im Menü verhindert Schließen
+    nav.addEventListener("click", (e) => {
+      e.stopPropagation();
+    });
+
+    // Klick außerhalb schließt Menü
+    document.addEventListener("click", () => {
+      if (nav.classList.contains("open")) {
+        nav.classList.remove("open");
+        burger.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+});

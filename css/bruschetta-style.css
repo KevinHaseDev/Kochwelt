@@ -24,12 +24,6 @@ header {
     padding-bottom: 7px;
 }
 
-.header-width {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 /* Burger-Icon */
 .burger {
@@ -74,10 +68,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.main-width {
-    width: 80%;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 h1 {
@@ -311,12 +303,20 @@ footer {
     padding-bottom: 40px;
 }
 
-@media(max-width:678px) {
+@media(max-width:800px) {
+    header{
+        padding-right: 20px;
+        padding-left: 60px;
+    }
     .burger {
         display: flex;
     }
+    main{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
 
-    nav.links {
+    .links {
         display: none;
         text-align: end;
         flex-direction: column;
