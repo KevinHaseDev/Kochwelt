@@ -201,6 +201,13 @@ input::placeholder {
     border: none;
     text-decoration: none;
     font-size: 16px;
+    cursor: pointer;
+    transition: background-color 125ms ease, color 125ms ease-in-out;
+}
+#calculate:hover {
+    background-color: #093a0b;
+    scale: 1.2;
+
 }
 
 .seperator-line {

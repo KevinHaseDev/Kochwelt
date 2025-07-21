@@ -61,6 +61,7 @@ header a {
     color: black;
     text-decoration: none;
     padding-left: 10px;
+    transition: background-color 125ms ease, color 125ms ease-in-out;
 }
 
 header a:hover {
@@ -101,16 +102,21 @@ header a:hover {
 
 .button-to-rezept {
     background-color: #008000;
-    font-size: 20px;
     color: white;
-    border-style: none;
-    padding: 15px 70px;
-    margin-top: 80px;
+    padding: 8px 32px;
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
     cursor: pointer;
+    margin-top: 80px;
+    transition: background-color 125ms ease, color 125ms ease-in-out;
+    
+    
 }
 
 .button-to-rezept:hover {
     background-color: #093a0b;
+    scale: 1.2;
 
 }
 
@@ -143,6 +149,7 @@ figcaption {
     width: 200px;
     border-radius: 10px;
     object-fit: cover;
+    transition: scale 125ms ease, color 125ms ease-in-out;
 }
 
 .quicklinks img:hover {
@@ -224,7 +231,7 @@ footer {
     gap: 40px;
     padding-top: 30px;
     border-radius: 6px;
-    transition: background-color 250ms ease, color 250ms ease-in-out;
+    transition: background-color 125ms ease, color 125ms ease-in-out;
 }
 
 .legal-section a:hover,
