@@ -1,50 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tiramisu Rezept</title>
-    <link rel="stylesheet" href="./css/bruschetta-style.css">
+    <link rel="stylesheet" href="./css/bruschetta-style.css" />
     <script src="rechner.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <a href="./index.html"><img src="./img/logo.png" alt="Kochwelt Logo" /></a>
+      <section class="header-width">
+        <a href="./index.html"
+          ><img src="./img/logo.png" alt="Kochwelt Logo"
+        /></a>
         <!-- Burger Icon -->
         <div id="burger" class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+
         <nav class="links">
-            <a href="./index.html">Start</a>
-            <a href="./pizza-recipe.html">Rezept des Tages</a>
-            <a href="./kontakt.html">Kontakt</a>
-            <a href="./docs/impressum.pdf" target="_blank">Impressum</a>
+          <a href="./index.html">Start</a>
+          <a href="./pizza-recipe.html">Rezept des Tages</a>
+          <a href="./kontakt.html">Kontakt</a>
+          <a href="./docs/impressum.pdf" target="_blank">Impressum</a>
         </nav>
+      </section>
     </header>
+
     <div class="seperator-line-header"></div>
+
     <main>
+      <section class="main-width">
         <h1>Italienisches Tiramisu</h1>
 
         <div class="tiramius-recipe"></div>
 
         <div class="icon-box">
-            <div class="icon-border"><img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />30
-                Min.</div>
-            <div class="icon-border"><img src="./img/icons/brain-solid.svg" alt="brain icon" class="icon" />simpel</div>
-            <div class="icon-border"><img src="./img/icons/calendar-alt-regular.svg" alt="calendar icon"
-                    class="icon" />18.07.2025</div>
+          <div class="icon-border">
+            <img
+              src="./img/icons/clock-regular.svg"
+              alt="clock icon"
+              class="icon"
+            />30 Min.
+          </div>
+          <div class="icon-border">
+            <img
+              src="./img/icons/brain-solid.svg"
+              alt="brain icon"
+              class="icon"
+            />simpel
+          </div>
+          <div class="icon-border">
+            <img
+              src="./img/icons/calendar-alt-regular.svg"
+              alt="calendar icon"
+              class="icon"
+            />18.07.2025
+          </div>
         </div>
 
         <div class="seperator-line"></div>
 
         <div class="input-container">
-            <label for="amount"><strong>Zutaten für:</strong></label>
-            <input id="amount" min="1" max="50" type="number" placeholder="4">
+          <label for="amount"><strong>Zutaten für:</strong></label>
+          <div class="res-input">
+            <input id="amount" min="1" max="50" type="number" placeholder="4" />
             <button id="calculate">Portionen</button>
+          </div>
         </div>
 
         <table id="ingredients">
@@ -78,47 +103,91 @@
 
         <h3>Zubereitung</h3>
         <div class="icon-box">
-            <div class="icon-border"><img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />ca. 30
-                Min.</div>
-            <div class="icon-border"><img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />Gesamtzeit
-                ca. 3 Std. (inkl. Kühlzeit)</div>
+          <div class="icon-border">
+            <img
+              src="./img/icons/clock-regular.svg"
+              alt="clock icon"
+              class="icon"
+            />ca. 30 Min.
+          </div>
+          <div class="icon-border">
+            <img
+              src="./img/icons/clock-regular.svg"
+              alt="clock icon"
+              class="icon"
+            />Gesamtzeit ca. 3 Std. (inkl. Kühlzeit)
+          </div>
         </div>
         <article>
-            <p>Die Eier trennen und die Eigelbe mit Zucker und Vanillezucker schaumig
-                schlagen. Anschließend Mascarpone unterrühren, bis eine glatte Creme
-                entsteht. Die Eiweiße steif schlagen und vorsichtig unter die Creme
-                heben. Den Espresso mit Amaretto oder Marsala vermischen. Die
-                Löffelbiskuits kurz in die Flüssigkeit tauchen und den Boden einer
-                Form damit auslegen. Die Hälfte der Creme darauf verteilen, dann eine
-                zweite Schicht getränkter Biskuits und den Rest der Creme darüber
-                geben. Das Tiramisu für mindestens 2 - 3 Stunden kalt stellen. Vor dem
-                Servieren mit Kakaopulver bestäuben.</p>
+          <p>
+            Die Eier trennen und die Eigelbe mit Zucker und Vanillezucker
+            schaumig schlagen. Anschließend Mascarpone unterrühren, bis eine
+            glatte Creme entsteht. Die Eiweiße steif schlagen und vorsichtig
+            unter die Creme heben. Den Espresso mit Amaretto oder Marsala
+            vermischen. Die Löffelbiskuits kurz in die Flüssigkeit tauchen und
+            den Boden einer Form damit auslegen. Die Hälfte der Creme darauf
+            verteilen, dann eine zweite Schicht getränkter Biskuits und den Rest
+            der Creme darüber geben. Das Tiramisu für mindestens 2 - 3 Stunden
+            kalt stellen. Vor dem Servieren mit Kakaopulver bestäuben.
+          </p>
         </article>
         <aside>
-            <h4>Rezept erstell von</h4>
-            <div class="profile">
-                <img src="./img/profile.png" alt="profile picture">
-                <span>Younes</span>
-            </div>
+          <h4>Rezept erstell von</h4>
+          <div class="profile">
+            <img src="./img/profile.png" alt="profile picture" />
+            <span>Younes</span>
+          </div>
         </aside>
+      </section>
     </main>
+
     <footer>
-        <div class="social-media-container">
-            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
-                <img src="./img/icons/instagram.svg" alt="Instagram logo" class="social-media" /></a>
-            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
-                <img src="./img/icons/facebook.svg" alt="Facebook logo" class="social-media" /></a>
-            <a href="https://x.com/" target="_blank" aria-label="X (formerly Twitter)">
-                <img src="./img/icons/x-twitter.svg" alt="X logo (formerly Twitter)" class="social-media" /></a>
-            <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
-                <img src="./img/icons/youtube.svg" alt="YouTube logo" class="social-media" /></a>
-        </div>
-        <div class="legal-section">
-            <a href="./docs/datenschutz.pdf" class="data-privacy" target="_blank">Datenschutz</a>
-            <a href="./docs/impressum.pdf" class="imprint" target="_blank">Impressum</a>
-        </div>
+      <div class="social-media-container">
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <img
+            src="./img/icons/instagram.svg"
+            alt="Instagram logo"
+            class="social-media"
+        /></a>
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          aria-label="Facebook"
+        >
+          <img
+            src="./img/icons/facebook.svg"
+            alt="Facebook logo"
+            class="social-media"
+        /></a>
+        <a
+          href="https://x.com/"
+          target="_blank"
+          aria-label="X (formerly Twitter)"
+        >
+          <img
+            src="./img/icons/x-twitter.svg"
+            alt="X logo (formerly Twitter)"
+            class="social-media"
+        /></a>
+        <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+          <img
+            src="./img/icons/youtube.svg"
+            alt="YouTube logo"
+            class="social-media"
+        /></a>
+      </div>
+      <div class="legal-section">
+        <a href="./docs/datenschutz.pdf" class="data-privacy" target="_blank"
+          >Datenschutz</a
+        >
+        <a href="./docs/impressum.pdf" class="imprint" target="_blank"
+          >Impressum</a
+        >
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
