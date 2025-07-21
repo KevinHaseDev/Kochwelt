@@ -130,7 +130,7 @@ textarea {
     width: 40px;
     height: auto;
     filter: invert(100%) brightness(200%);
-    transition: filter 250ms ease;
+    transition: filter 125ms ease;
 }
 
 .social-media:hover,
@@ -157,7 +157,7 @@ footer {
     color: white;
     text-decoration: none;
     cursor: pointer;
-    transition: color 250ms ease;
+    transition: color 125ms ease;
     font-weight: bold;
 }
 
@@ -167,7 +167,7 @@ footer {
     gap: 40px;
     padding-top: 30px;
     border-radius: 6px;
-    transition: background-color 250ms ease, color 250ms ease-in-out;
+    transition: background-color 125ms ease, color 125ms ease-in-out;
 }
 
 .legal-section a:hover,
