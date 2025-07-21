@@ -17,24 +17,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* impressum */
-.padding-impressum {
-    padding: 20px;
-}
-
-.impr {
-    padding: 40px 0 20px 0;
-}
-
-.contact {
-    text-align: left;
-    padding-top: 40px;
-}
-
-.credits {
-    padding-top: 20px;
-}
-
 /* Burger-Icon */
 .burger {
     display: none;
@@ -119,10 +101,10 @@ header a:hover {
 
 .button-to-rezept {
     background-color: #008000;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     border-style: none;
-    padding: 17px 90px;
+    padding: 15px 70px;
     margin-top: 80px;
     cursor: pointer;
 }
@@ -166,6 +148,38 @@ figcaption {
 .quicklinks img:hover {
     scale: 1.2;
     border-radius: 20px;
+}
+
+/*Section three*/
+.headline-good-to-know {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.good-to-know {
+    padding: 0 120px 100px 120px;
+}
+
+.good-to-know-img {
+    display: flex;
+    height: 240px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.text-img-good-to-know {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+
+}
+
+.text-width-70 {
+    padding-right: 20px;
+    display: flex;
+    width: 70%;
+    align-items: center;
 }
 
 /* Footer  */
@@ -219,36 +233,51 @@ footer {
     filter: drop-shadow(0px 0px 5px #f7f5f3);
 }
 
-/*Section three*/
-.headline-good-to-know {
-    text-align: center;
-    margin-top: 80px;
+
+/* impressum */
+.padding-impressum {
+    padding: 20px;
 }
 
-.good-to-know {
-    padding: 0 120px 100px 120px;
+.impr {
+    padding: 40px 0 20px 0;
 }
 
-.good-to-know-img {
-    display: flex;
-    height: 240px;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 6px;
+.contact {
+    text-align: left;
+    padding-top: 40px;
 }
 
-.text-img-good-to-know {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 80px;
-
+.credits {
+    padding-top: 20px;
 }
 
-.text-width-70 {
-    padding-right: 20px;
-    display: flex;
-    width: 70%;
-    align-items: center;
+@media(max-width:920px) {
+    .quicklinks {
+        display: flex;
+        flex-direction: column;
+        gap: 20px
+    }
+
+    .headline-good-to-know {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:850px) {
+    .section-one-img {
+        height: 320px;
+    }
+
+    .section-one {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .good-to-know {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 @media(max-width:800px) {
@@ -276,5 +305,86 @@ footer {
 
     nav.links.open {
         display: flex;
+    }
+
+}
+
+@media(max-width:770px) {
+    .section-one {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .section-one-img {
+        height: 200px;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .Section-one-title {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+@media(max-width:650px) {
+    header {
+        padding-left: 20px;
+    }
+
+    .text-img-good-to-know {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0;
+        text-align: center;
+
+    }
+
+    .text-width-70 {
+        width: 100%;
+    }
+
+    .good-to-know-img {
+        width: 90%;
+        padding-bottom: 20px;
+    }
+
+}
+
+@media(max-width:520px) {
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:460px) {
+    .kevin {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media(max-width:350px) {
+    h2 {
+
+        font-size: 18px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .headline-good-to-know {
+        font-size: 18px;
+    }
+
+    .kevin {
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
