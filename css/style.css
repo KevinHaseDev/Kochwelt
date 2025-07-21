@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'Raleway';
-    src: url('./fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+    src: url('../fonts/Raleway-VariableFont_wght.ttf') format('truetype');
     font-weight: 100 900;
     font-style: normal;
 }
@@ -67,11 +67,12 @@ header img {
     width: 200;
     height: 60px;
 }
-.links{
+
+.links {
     height: 104px;
     display: flex;
     align-items: flex-end;
-    
+
 }
 
 header a {
@@ -229,8 +230,8 @@ footer {
 }
 
 .good-to-know-img {
-   display: flex;
-    height:240px;
+    display: flex;
+    height: 240px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 6px;
@@ -240,7 +241,7 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-top: 80px;
-    
+
 }
 
 .text-width-70 {
