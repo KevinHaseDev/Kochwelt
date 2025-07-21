@@ -59,19 +59,16 @@ html {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 120px;
+    align-items: flex-end;
+    padding-top: 20px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 7px;
 }
 
 header img {
     width: 200;
     height: 60px;
-}
-.links{
-    height: 104px;
-    display: flex;
-    align-items: flex-end;
-    
 }
 
 header a {
@@ -258,9 +255,10 @@ footer {
 
     .burger {
         display: flex;
+        justify-content: flex-end;
     }
 
-    nav.links {
+    nav {
         display: none;
         text-align: end;
         flex-direction: column;
