@@ -110,8 +110,8 @@ header a:hover {
     cursor: pointer;
     margin-top: 80px;
     transition: background-color 125ms ease, color 125ms ease-in-out;
-    
-    
+
+
 }
 
 .button-to-rezept:hover {
@@ -194,7 +194,7 @@ figcaption {
     width: 40px;
     height: auto;
     filter: invert(100%) brightness(200%);
-    transition: filter 250ms ease;
+    transition: filter 125ms ease;
 }
 
 .social-media:hover,
@@ -221,7 +221,7 @@ footer {
     color: white;
     text-decoration: none;
     cursor: pointer;
-    transition: color 250ms ease;
+    transition: color 125ms ease;
     font-weight: bold;
 }
 
