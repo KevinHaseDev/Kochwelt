@@ -203,6 +203,7 @@ input::placeholder {
     color: white;
     padding: 8px 32px;
     border: none;
+    width: 135px;
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
@@ -321,12 +322,12 @@ footer {
     padding-bottom: 40px;
 }
 
-@media(max-width:678px) {
+@media(max-width:800px) {
     .burger {
         display: flex;
     }
 
-    nav.links {
+    .links {
         display: none;
         text-align: end;
         flex-direction: column;
@@ -350,9 +351,9 @@ footer {
 
     .input-container {}
 
-    #calculate {
+    /* #calculate {
         flex: 1;
-    }
+    } */
 
     .res-input {
         flex: 1;

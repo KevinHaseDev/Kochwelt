@@ -186,7 +186,7 @@ footer {
         display: flex;
     }
 
-    nav.links {
+    .links {
         display: none;
         text-align: end;
         flex-direction: column;
