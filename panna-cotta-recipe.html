@@ -2,122 +2,146 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/logo_small.png" type="image/png">
-    <title>Panna Cotta</title>
-    <link rel="stylesheet" href="./css/bruschetta-style.css">
-    <script src="rechner.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panna Cotta</title>
+  <link rel="stylesheet" href="./css/bruschetta-style.css" />
+  <script src="rechner.js"></script>
+  <link rel="icon" href="./img/logo_small.png" type="image/png">
 </head>
 
 <body>
+
+  <div class="content-limitation-header">
     <header>
-        <a href="./index.html"><img src="./img/logo.png" alt="Kochwelt Logo" /></a>
-        <!-- Burger Icon -->
-        <div id="burger" class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-       <div class="links">
-        <nav >
-            <a href="./index.html">Start</a>
-            <a href="./pizza-recipe.html">Rezept des Tages</a>
-            <a href="./kontakt.html">Kontakt</a>
-            <a href="./docs/impressum.pdf" target="_blank">Impressum</a>
+      <a href="./index.html"><img src="./img/logo.png" alt="Kochwelt Logo" /></a>
+      <div id="burger" class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="links">
+        <nav>
+          <a href="./index.html">Start</a>
+          <a href="./pizza-recipe.html">Rezept des Tages</a>
+          <a href="./kontakt.html">Kontakt</a>
+          <a href="./docs/impressum.pdf" target="_blank">Impressum</a>
         </nav>
-        </div>
+      </div>
     </header>
-    <div class="seperator-line-header"></div>
-    <main>
-        <section class="main-width">
+  </div>
+  <div class="seperator-line-header"></div>
+
+  <main>
+    <div class="content-limitation-one">
+      <section class="section-one">
         <h1>Panna Cotta</h1>
-
         <div class="recipe-panna-cotta"></div>
-
         <div class="icon-box">
-            <div class="icon-border"><img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />15
-                Min.</div>
-            <div class="icon-border"><img src="./img/icons/brain-solid.svg" alt="brain icon" class="icon" />simpel</div>
-            <div class="icon-border"><img src="./img/icons/calendar-alt-regular.svg" alt="calendar icon"
-                    class="icon" />18.07.2025</div>
+          <div class="icon-border">
+            <img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />15 Min.
+          </div>
+          <div class="icon-border">
+            <img src="./img/icons/brain-solid.svg" alt="brain icon" class="icon" />simpel
+          </div>
+          <div class="icon-border">
+            <img src="./img/icons/calendar-alt-regular.svg" alt="calendar icon" class="icon" />18.07.2025
+          </div>
         </div>
+      </section>
+    </div>
 
-        <div class="seperator-line"></div>
+    <div class="seperator-line"></div>
 
+    <div class="content-limitation-table">
+      <section class="section-table">
         <div class="input-container">
-            <label for="amount"><strong>Zutaten für:</strong></label>
-            <div class="res-input">
-            <input id="amount" min="1" max="50" type="number" placeholder="4">
+          <label for="amount"><strong>Zutaten für:</strong></label>
+          <div class="res-input">
+            <input id="amount" min="1" max="50" type="number" placeholder="4" />
             <button id="calculate">Portionen</button>
-            </div>
+          </div>
         </div>
 
         <table id="ingredients">
-            <tbody>
-                <tr data-base="500">
-                    <td><span class="quantity">500</span>ml Sahne</td>
-                </tr>
-                <tr data-base="50">
-                    <td><span class="quantity">50</span>g Zucker</td>
-                </tr>
-                <tr data-base="1">
-                    <td><span class="quantity">1</span> Vanilleschote (oder 1 TL Vanilleextrakt)</td>
-                </tr>
-                <tr data-base="3">
-                    <td><span class="quantity">3</span> Blatt Gelatine</td>
-                </tr>
-                <tr>
-                    <td><span></span>Frische Beeren (z.B. Himbeeren, Blaubeeren)</td>
-                </tr>
-                <tr>
-                    <td><span></span>Minzblätter und Beerensauce zur Dekoration (optional)</td>
-                </tr>
-            </tbody>
+          <tbody>
+            <tr data-base="500">
+              <td><span class="quantity">500</span>ml Sahne</td>
+            </tr>
+            <tr data-base="50">
+              <td><span class="quantity">50</span>g Zucker</td>
+            </tr>
+            <tr data-base="1">
+              <td><span class="quantity">1</span> Vanilleschote (oder 1 TL Vanilleextrakt)</td>
+            </tr>
+            <tr data-base="3">
+              <td><span class="quantity">3</span> Blatt Gelatine</td>
+            </tr>
+            <tr>
+              <td><span></span>Frische Beeren (z.B. Himbeeren, Blaubeeren)</td>
+            </tr>
+            <tr>
+              <td><span></span>Minzblätter und Beerensauce zur Dekoration (optional)</td>
+            </tr>
+          </tbody>
         </table>
+      </section>
+    </div>
 
-        <h3 class="preparation">Zubereitung</h3>
-        <div class="icon-box padding-bottom">
-            <div class="icon-border"><img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />15
-                Min.</div>
-            <div class="icon-border"><img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />Gesamtzeit
-                4 Std. 15 Min.
-            </div>
+    <div class="content-limitation-article">
+      <section class="preparation">
+        <h3>Zubereitung</h3>
+        <div class="icon-box">
+          <div class="icon-border">
+            <img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />15 Min.
+          </div>
+          <div class="icon-border">
+            <img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />Gesamtzeit 4 Std. 15 Min.
+          </div>
         </div>
+
         <article>
-            <p>Die Gelatineblätter werden zunächst in kaltem Wasser etwa 5 bis 10 Minuten lang eingeweicht. 
-                In der Zwischenzeit wird die Sahne zusammen mit dem Zucker und dem ausgekratzten Mark der Vanilleschote (sowie der Schote selbst) in einem Topf langsam erhitzt. 
-                Dabei sollte die Sahne heiß werden, aber nicht kochen. Sobald die Mischung heiß ist, 
-                nimmt man den Topf vom Herd, entfernt die Vanilleschote und rührt die gut ausgedrückte Gelatine unter, 
-                bis sie sich vollständig aufgelöst hat. Die flüssige Creme wird anschließend in kleine Gläser oder Förmchen gefüllt und muss für mindestens 4 Stunden, 
-                idealerweise über Nacht, im Kühlschrank fest werden. Vor dem Servieren kann die Panna Cotta gestürzt oder direkt im Glas serviert und nach Belieben mit frischen Beeren,
-                 Beerensauce und einem Minzblatt garniert werden.</p>
+          <p>
+            Die Gelatineblätter werden zunächst in kaltem Wasser etwa 5 bis 10 Minuten lang eingeweicht.
+            In der Zwischenzeit wird die Sahne zusammen mit dem Zucker und dem ausgekratzten Mark der Vanilleschote
+            (sowie der Schote selbst) in einem Topf langsam erhitzt. Dabei sollte die Sahne heiß werden, aber nicht
+            kochen. Sobald die Mischung heiß ist, nimmt man den Topf vom Herd, entfernt die Vanilleschote und rührt
+            die gut ausgedrückte Gelatine unter, bis sie sich vollständig aufgelöst hat. Die flüssige Creme wird
+            anschließend in kleine Gläser oder Förmchen gefüllt und muss für mindestens 4 Stunden, idealerweise über
+            Nacht, im Kühlschrank fest werden. Vor dem Servieren kann die Panna Cotta gestürzt oder direkt im Glas
+            serviert und nach Belieben mit frischen Beeren, Beerensauce und einem Minzblatt garniert werden.
+          </p>
         </article>
+
         <aside>
-            <h4>Rezept erstellt von</h4>
-            <div class="profile">
-                <img src="./img/profil.jpeg" alt="profile picture">
-                <span>Kevin</span>
-            </div>
+          <h4>Rezept erstellt von</h4>
+          <div class="profile">
+            <img src="./img/profil.jpeg" alt="profile picture" />
+            <span>Kevin</span>
+          </div>
         </aside>
-        </section>
-    </main>
+      </section>
+    </div>
+  </main>
+
+  <div class="content-limitation">
     <footer>
-        <div class="social-media-container">
-            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
-                <img src="./img/icons/instagram.svg" alt="Instagram logo" class="social-media" /></a>
-            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
-                <img src="./img/icons/facebook.svg" alt="Facebook logo" class="social-media" /></a>
-            <a href="https://x.com/" target="_blank" aria-label="X (formerly Twitter)">
-                <img src="./img/icons/x-twitter.svg" alt="X logo (formerly Twitter)" class="social-media" /></a>
-            <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
-                <img src="./img/icons/youtube.svg" alt="YouTube logo" class="social-media" /></a>
-        </div>
-        <div class="legal-section">
-            <a href="./docs/datenschutz.pdf" class="data-privacy" target="_blank">Datenschutz</a>
-            <a href="./docs/impressum.pdf" class="imprint" target="_blank">Impressum</a>
-        </div>
+      <div class="social-media-container">
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+          <img src="./img/icons/instagram.svg" alt="Instagram logo" class="social-media" /></a>
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+          <img src="./img/icons/facebook.svg" alt="Facebook logo" class="social-media" /></a>
+        <a href="https://x.com/" target="_blank" aria-label="X (formerly Twitter)">
+          <img src="./img/icons/x-twitter.svg" alt="X logo (formerly Twitter)" class="social-media" /></a>
+        <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+          <img src="./img/icons/youtube.svg" alt="YouTube logo" class="social-media" /></a>
+      </div>
+      <div class="legal-section">
+        <a href="./docs/datenschutz.pdf" class="data-privacy" target="_blank">Datenschutz</a>
+        <a href="./docs/impressum.pdf" class="imprint" target="_blank">Impressum</a>
+      </div>
     </footer>
+  </div>
 
 </body>
 

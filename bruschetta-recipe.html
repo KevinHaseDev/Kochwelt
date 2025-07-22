@@ -1,114 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bruschetta Rezept</title>
-    <link rel="stylesheet" href="./css/bruschetta-style.css" />
-    <script src="rechner.js"></script>
-    <link rel="icon" href="./img/logo_small.png" type="image/png">
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bruschetta Rezept</title>
+  <link rel="stylesheet" href="./css/bruschetta-style.css" />
+  <script src="rechner.js"></script>
+  <link rel="icon" href="./img/logo_small.png" type="image/png">
+</head>
+
+<body>
+
+  <div class="content-limitation-header">
     <header>
-        <a href="./index.html"><img src="./img/logo.png" alt="Kochwelt Logo" /></a>
-        <!-- Burger Icon -->
-        <div id="burger" class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-       <div class="links">
-        <nav >
-            <a href="./index.html">Start</a>
-            <a href="./pizza-recipe.html">Rezept des Tages</a>
-            <a href="./kontakt.html">Kontakt</a>
-            <a href="./docs/impressum.pdf" target="_blank">Impressum</a>
+      <a href="./index.html"><img src="./img/logo.png" alt="Kochwelt Logo" /></a>
+      <!-- Burger Icon -->
+      <div id="burger" class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="links">
+        <nav>
+          <a href="./index.html">Start</a>
+          <a href="./pizza-recipe.html">Rezept des Tages</a>
+          <a href="./kontakt.html">Kontakt</a>
+          <a href="./docs/impressum.pdf" target="_blank">Impressum</a>
         </nav>
-        </div>
+      </div>
     </header>
-    <div class="seperator-line-header"></div>
-    <main>
-      <section class="main-width">
-        <h1>Bruschetta mit Tomaten und Basilikum</h1>
-        <div class="recipe"></div>
-        <div class="icon-box">
-          <div class="icon-border">
-            <img
-              src="./img/icons/clock-regular.svg"
-              alt="clock icon"
-              class="icon"
-            />20-25 Min.
-          </div>
-          <div class="icon-border">
-            <img
-              src="./img/icons/brain-solid.svg"
-              alt="brain icon"
-              class="icon"
-            />simpel
-          </div>
-          <div class="icon-border">
-            <img
-              src="./img/icons/calendar-alt-regular.svg"
-              alt="calendar icon"
-              class="icon"
-            />18.07.2025
-          </div>
+  </div>
+  <div class="seperator-line-header"></div>
+  <main>
+    <div class="content-limitation-one">
+      <section class="section-one">
+      <h1>Bruschetta mit Tomaten und Basilikum</h1>
+      <div class="recipe"></div>
+      <div class="icon-box">
+        <div class="icon-border">
+          <img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />20-25 Min.
         </div>
+        <div class="icon-border">
+          <img src="./img/icons/brain-solid.svg" alt="brain icon" class="icon" />simpel
+        </div>
+        <div class="icon-border">
+          <img src="./img/icons/calendar-alt-regular.svg" alt="calendar icon" class="icon" />18.07.2025
+        </div>
+      </div>
+      </section>
+    </div>
 
-        <div class="seperator-line"></div>
+    <div class="seperator-line"></div>
 
+    <div class="content-limitation-table">
+      <section class="section-table">
         <div class="input-container">
           <label for="amount"><strong>Zutaten für:</strong></label>
           <div class="res-input">
-          <input id="amount" min="1" max="50" type="number" placeholder="4" />
-          <button id="calculate">Portionen</button>
+            <input id="amount" min="1" max="50" type="number" placeholder="4" />
+            <button id="calculate">Portionen</button>
           </div>
         </div>
 
         <table id="ingredients">
-            <tbody>
-                <tr data-base="1">
-                    <td><span class="quantity">1</span> Baguette wahlweise Ciabatta</td>
-                </tr>
-                <tr data-base="5">
-                    <td><span class="quantity">5</span> reife Tomaten (z.b. Roma oder Strauchtomaten)</td>
-                </tr>
-                <tr data-base="3">
-                    <td><span class="quantity">3</span> Knoblauchzehen</td>
-                </tr>
-                <tr data-base="1">
-                    <td><span class="quantity">1</span> Bund frisches Basilikum</td>
-                </tr>
-                <tr data-base="3">
-                    <td><span class="quantity">3</span> EL Olivenöl</td>
-                </tr>
-                <tr>
-                    <td><span></span>Salz und Pfeffer nach Geschmack</td>
-                </tr>
-                <tr>
-                    <td><span></span>Optional: Balsamico-Essig, Morzzarella oder Parmesian</td>
-                </tr>
-            </tbody>
+          <tbody>
+            <tr data-base="1">
+              <td><span class="quantity">1</span> Baguette wahlweise Ciabatta</td>
+            </tr>
+            <tr data-base="5">
+              <td><span class="quantity">5</span> reife Tomaten (z.b. Roma oder Strauchtomaten)</td>
+            </tr>
+            <tr data-base="3">
+              <td><span class="quantity">3</span> Knoblauchzehen</td>
+            </tr>
+            <tr data-base="1">
+              <td><span class="quantity">1</span> Bund frisches Basilikum</td>
+            </tr>
+            <tr data-base="3">
+              <td><span class="quantity">3</span> EL Olivenöl</td>
+            </tr>
+            <tr>
+              <td><span></span>Salz und Pfeffer nach Geschmack</td>
+            </tr>
+            <tr>
+              <td><span></span>Optional: Balsamico-Essig, Morzzarella oder Parmesian</td>
+            </tr>
+          </tbody>
         </table>
+      </section>
+    </div>
 
+    <div class="content-limitation-article">
+      <section class="preparation">
         <h3>Zubereitung</h3>
         <div class="icon-box">
           <div class="icon-border">
-            <img
-              src="./img/icons/clock-regular.svg"
-              alt="clock icon"
-              class="icon"
-            />15 Min.
+            <img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />15 Min.
           </div>
           <div class="icon-border">
-            <img
-              src="./img/icons/clock-regular.svg"
-              alt="clock icon"
-              class="icon"
-            />Gesamtzeit ca. 20-25 Min.
+            <img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />Gesamtzeit ca. 20-25 Min.
           </div>
         </div>
+
         <article>
           <p>
             Schneide die Tomaten klein, entferne dabei die Kerne, und gib sie in
@@ -124,6 +118,7 @@
             Mozzarella verfeinern.
           </p>
         </article>
+
         <aside>
           <h4>Rezept erstell von</h4>
           <div class="profile">
@@ -132,54 +127,27 @@
           </div>
         </aside>
       </section>
-    </main>
+    </div>
+  </main>
+  <div class="content-limitation">
     <footer>
       <div class="social-media-container">
-        <a
-          href="https://www.instagram.com/"
-          target="_blank"
-          aria-label="Instagram"
-        >
-          <img
-            src="./img/icons/instagram.svg"
-            alt="Instagram logo"
-            class="social-media"
-        /></a>
-        <a
-          href="https://www.facebook.com/"
-          target="_blank"
-          aria-label="Facebook"
-        >
-          <img
-            src="./img/icons/facebook.svg"
-            alt="Facebook logo"
-            class="social-media"
-        /></a>
-        <a
-          href="https://x.com/"
-          target="_blank"
-          aria-label="X (formerly Twitter)"
-        >
-          <img
-            src="./img/icons/x-twitter.svg"
-            alt="X logo (formerly Twitter)"
-            class="social-media"
-        /></a>
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+          <img src="./img/icons/instagram.svg" alt="Instagram logo" class="social-media" /></a>
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+          <img src="./img/icons/facebook.svg" alt="Facebook logo" class="social-media" /></a>
+        <a href="https://x.com/" target="_blank" aria-label="X (formerly Twitter)">
+          <img src="./img/icons/x-twitter.svg" alt="X logo (formerly Twitter)" class="social-media" /></a>
         <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
-          <img
-            src="./img/icons/youtube.svg"
-            alt="YouTube logo"
-            class="social-media"
-        /></a>
+          <img src="./img/icons/youtube.svg" alt="YouTube logo" class="social-media" /></a>
       </div>
       <div class="legal-section">
-        <a href="./docs/datenschutz.pdf" class="data-privacy" target="_blank"
-          >Datenschutz</a
-        >
-        <a href="./docs/impressum.pdf" class="imprint" target="_blank"
-          >Impressum</a
-        >
+        <a href="./docs/datenschutz.pdf" class="data-privacy" target="_blank">Datenschutz</a>
+        <a href="./docs/impressum.pdf" class="imprint" target="_blank">Impressum</a>
       </div>
     </footer>
-  </body>
+  </div>
+
+</body>
+
 </html>

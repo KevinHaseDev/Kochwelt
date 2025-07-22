@@ -36,11 +36,18 @@ html {
 
 }
 
+.content-limitation-header {
+    display: flex;
+    justify-content: center;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 120px;
+    max-width: 1440px;
+    width: 100%;
 }
 
 header img {
@@ -66,7 +73,7 @@ header a:hover {
     color: green;
     text-decoration: underline;
     text-decoration-thickness: 3px;
-    text-underline-offset: 8px;
+    text-underline-offset: 20px;
 }
 
 .seperator-line-header {
@@ -75,14 +82,17 @@ header a:hover {
     height: 4px;
 }
 
-main {
+.content-limitation-one {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-.main-width {
-    width: 80%;
+
+.section-one {
+    max-width: 1440px;
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 h1 {
@@ -100,6 +110,7 @@ h1 {
     height: 150px;
     margin-bottom: 20px;
     border-radius: 10px;
+    max-width: 1440px;
 }
 
 .recipe-penne {
@@ -110,9 +121,10 @@ h1 {
     height: 150px;
     margin-bottom: 20px;
     border-radius: 10px;
+    max-width: 1440px;
 }
 
-.tiramius-recipe {
+.recipe-tiramisu {
     background-image: url(/img/tiramisu.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -120,6 +132,7 @@ h1 {
     height: 150px;
     margin-bottom: 20px;
     border-radius: 10px;
+    max-width: 1440px;
 }
 
 .recipe-pizza {
@@ -130,6 +143,7 @@ h1 {
     height: 150px;
     margin-bottom: 20px;
     border-radius: 10px;
+    max-width: 1440px;
 }
 
 .recipe-panna-cotta {
@@ -140,6 +154,7 @@ h1 {
     height: 150px;
     margin-bottom: 20px;
     border-radius: 10px;
+    max-width: 1440px;
 }
 
 .icon-box {
@@ -161,7 +176,31 @@ h1 {
     border-radius: 8px;
 }
 
+.seperator-line {
+    background-color: #efefef;
+    object-fit: cover;
+    height: 2px;
 
+}
+
+.content-limitation-table {
+    display: flex;
+    justify-content: center;
+}
+
+
+.section-table {
+    max-width: 1440px;
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
 h3 {
     margin-top: 20px;
@@ -216,16 +255,6 @@ input::placeholder {
 
 }
 
-.seperator-line {
-    background-color: #efefef;
-    object-fit: cover;
-    height: 2px;
-}
-
-table {
-    width: 100%;
-}
-
 td {
     padding: 10px 20px;
     border-radius: 10px;
@@ -234,6 +263,19 @@ td {
 tr:nth-child(odd) {
     background-color: #f0f0f0;
 
+}
+
+.content-limitation-article {
+    display: flex;
+    justify-content: center;
+
+}
+
+.preparation {
+    max-width: 1440px;
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 h4 {
@@ -260,13 +302,22 @@ span {
     padding-left: 20px;
 }
 
-footer {
-    padding: 80px;
+.content-limitation {
+    display: flex;
+    justify-content: center;
     background-color: #403b3b;
+}
+
+footer {
+    max-width: 1440px;
+    width: 100%;
+    padding: 80px;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    max-width: 1440px;
 }
 
 .social-media-container {
@@ -323,7 +374,8 @@ footer {
 }
 
 @media(max-width:800px) {
-     header {
+
+    header {
         padding-right: 20px;
         padding-left: 20px;
     }
@@ -379,16 +431,30 @@ footer {
     .res-input {
         flex: 1;
     }
-}
 
-@media(max-width: 470px) {
-    .input-container {
-        flex-direction: column;
-        align-items: flex-start;
+    .section-one {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
-    .res-input {
-        padding-top: 10px;
-        width: 100%;
+    .section-table {
+        padding-left: 20px;
+        padding-right: 20px;
     }
-}
+
+    .preparation {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @media(max-width: 470px) {
+        .input-container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .res-input {
+            padding-top: 10px;
+            width: 100%;
+        }
+    }

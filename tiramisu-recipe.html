@@ -1,68 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tiramisu Rezept</title>
-    <link rel="stylesheet" href="./css/bruschetta-style.css" />
-    <script src="rechner.js"></script>
-    <link rel="icon" href="./img/logo_small.png" type="image/png">
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiramisu Rezept</title>
+  <link rel="stylesheet" href="./css/bruschetta-style.css" />
+  <script src="rechner.js"></script>
+  <link rel="icon" href="./img/logo_small.png" type="image/png">
+</head>
+
+<body>
+  <div class="content-limitation-header">
     <header>
-        <a href="./index.html"><img src="./img/logo.png" alt="Kochwelt Logo" /></a>
-        <!-- Burger Icon -->
-        <div id="burger" class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-       <div class="links">
-        <nav >
-            <a href="./index.html">Start</a>
-            <a href="./pizza-recipe.html">Rezept des Tages</a>
-            <a href="./kontakt.html">Kontakt</a>
-            <a href="./docs/impressum.pdf" target="_blank">Impressum</a>
+      <a href="./index.html"><img src="./img/logo.png" alt="Kochwelt Logo" /></a>
+      <!-- Burger Icon -->
+      <div id="burger" class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="links">
+        <nav>
+          <a href="./index.html">Start</a>
+          <a href="./pizza-recipe.html">Rezept des Tages</a>
+          <a href="./kontakt.html">Kontakt</a>
+          <a href="./docs/impressum.pdf" target="_blank">Impressum</a>
         </nav>
-        </div>
+      </div>
     </header>
-    </header>
+  </div>
 
-    <div class="seperator-line-header"></div>
+  <div class="seperator-line-header"></div>
 
-    <main>
-      <section class="main-width">
-        <h1>Italienisches Tiramisu</h1>
-
-        <div class="tiramius-recipe"></div>
-
+  <main>
+    <div class="content-limitation-one">
+      <section class="section-one">
+        <h1>Tiramisu</h1>
+        <div class="recipe-tiramisu"></div>
         <div class="icon-box">
           <div class="icon-border">
-            <img
-              src="./img/icons/clock-regular.svg"
-              alt="clock icon"
-              class="icon"
-            />30 Min.
+            <img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />15 Min.
           </div>
           <div class="icon-border">
-            <img
-              src="./img/icons/brain-solid.svg"
-              alt="brain icon"
-              class="icon"
-            />simpel
+            <img src="./img/icons/brain-solid.svg" alt="brain icon" class="icon" />simpel
           </div>
           <div class="icon-border">
-            <img
-              src="./img/icons/calendar-alt-regular.svg"
-              alt="calendar icon"
-              class="icon"
-            />18.07.2025
+            <img src="./img/icons/calendar-alt-regular.svg" alt="calendar icon" class="icon" />18.07.2025
           </div>
         </div>
+      </section>
+    </div>
 
-        <div class="seperator-line"></div>
+    <div class="seperator-line"></div>
 
+    <div class="content-limitation-table">
+      <section class="section-table">
         <div class="input-container">
           <label for="amount"><strong>Zutaten für:</strong></label>
           <div class="res-input">
@@ -72,49 +65,46 @@
         </div>
 
         <table id="ingredients">
-            <tbody>
-                <tr data-base="250">
-                    <td><span class="quantity">250</span>g Mascarpone</td>
-                </tr>
-                <tr data-base="3">
-                    <td><span class="quantity">3</span>frische Eier</td>
-                </tr>
-                <tr data-base="100">
-                    <td><span class="quantity">100</span>g Zucker</td>
-                </tr>
-                <tr data-base="200">
-                    <td><span class="quantity">200</span>g Löffelbiskuits (Savoiardi)</td>
-                </tr>
-                <tr data-base="200">
-                    <td><span class="quantity">200</span>ml starker Espresso (abgekühlt)</td>
-                </tr>
-                <tr data-base="1">
-                    <td><span class="quantity">1</span> Päckchen Vanillezucker</td>
-                </tr>
-                <tr data-base="1">
-                    <td><span class="quantity">2</span> EL Amaretto oder Marsala (optional)</td>
-                </tr>
-                <tr>
-                    <td><span></span>Kakaopulver zum Bestäuben</td>
-                </tr>
-            </tbody>
+          <tbody>
+            <tr data-base="250">
+              <td><span class="quantity">250</span>g Mascarpone</td>
+            </tr>
+            <tr data-base="3">
+              <td><span class="quantity">3</span>frische Eier</td>
+            </tr>
+            <tr data-base="100">
+              <td><span class="quantity">100</span>g Zucker</td>
+            </tr>
+            <tr data-base="200">
+              <td><span class="quantity">200</span>g Löffelbiskuits (Savoiardi)</td>
+            </tr>
+            <tr data-base="200">
+              <td><span class="quantity">200</span>ml starker Espresso (abgekühlt)</td>
+            </tr>
+            <tr data-base="1">
+              <td><span class="quantity">1</span> Päckchen Vanillezucker</td>
+            </tr>
+            <tr data-base="1">
+              <td><span class="quantity">2</span> EL Amaretto oder Marsala (optional)</td>
+            </tr>
+            <tr>
+              <td><span></span>Kakaopulver zum Bestäuben</td>
+            </tr>
+          </tbody>
         </table>
+      </section>
+    </div>
 
+    <div class="content-limitation-article">
+      <section class="preparation">
         <h3>Zubereitung</h3>
         <div class="icon-box">
           <div class="icon-border">
-            <img
-              src="./img/icons/clock-regular.svg"
-              alt="clock icon"
-              class="icon"
-            />ca. 30 Min.
+            <img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />ca. 30 Min.
           </div>
           <div class="icon-border">
-            <img
-              src="./img/icons/clock-regular.svg"
-              alt="clock icon"
-              class="icon"
-            />Gesamtzeit ca. 3 Std. (inkl. Kühlzeit)
+            <img src="./img/icons/clock-regular.svg" alt="clock icon" class="icon" />Gesamtzeit ca. 3 Std. (inkl.
+            Kühlzeit)
           </div>
         </div>
         <article>
@@ -138,55 +128,27 @@
           </div>
         </aside>
       </section>
-    </main>
+    </div>
+  </main>
 
+  <div class="content-limitation">
     <footer>
       <div class="social-media-container">
-        <a
-          href="https://www.instagram.com/"
-          target="_blank"
-          aria-label="Instagram"
-        >
-          <img
-            src="./img/icons/instagram.svg"
-            alt="Instagram logo"
-            class="social-media"
-        /></a>
-        <a
-          href="https://www.facebook.com/"
-          target="_blank"
-          aria-label="Facebook"
-        >
-          <img
-            src="./img/icons/facebook.svg"
-            alt="Facebook logo"
-            class="social-media"
-        /></a>
-        <a
-          href="https://x.com/"
-          target="_blank"
-          aria-label="X (formerly Twitter)"
-        >
-          <img
-            src="./img/icons/x-twitter.svg"
-            alt="X logo (formerly Twitter)"
-            class="social-media"
-        /></a>
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+          <img src="./img/icons/instagram.svg" alt="Instagram logo" class="social-media" /></a>
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+          <img src="./img/icons/facebook.svg" alt="Facebook logo" class="social-media" /></a>
+        <a href="https://x.com/" target="_blank" aria-label="X (formerly Twitter)">
+          <img src="./img/icons/x-twitter.svg" alt="X logo (formerly Twitter)" class="social-media" /></a>
         <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
-          <img
-            src="./img/icons/youtube.svg"
-            alt="YouTube logo"
-            class="social-media"
-        /></a>
+          <img src="./img/icons/youtube.svg" alt="YouTube logo" class="social-media" /></a>
       </div>
       <div class="legal-section">
-        <a href="./docs/datenschutz.pdf" class="data-privacy" target="_blank"
-          >Datenschutz</a
-        >
-        <a href="./docs/impressum.pdf" class="imprint" target="_blank"
-          >Impressum</a
-        >
+        <a href="./docs/datenschutz.pdf" class="data-privacy" target="_blank">Datenschutz</a>
+        <a href="./docs/impressum.pdf" class="imprint" target="_blank">Impressum</a>
       </div>
     </footer>
-  </body>
+  </div>
+</body>
+
 </html>
