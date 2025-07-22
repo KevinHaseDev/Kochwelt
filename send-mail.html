@@ -8,7 +8,7 @@
   <title>Kontakt</title>
   <link rel="icon" href="./img/logo_small.png" type="image/png">
   <script src="rechner.js"></script>
-  
+  <script sry="send-mail.js"></script>
 
 
 </head>
@@ -36,24 +36,7 @@
   </div>
   <div class="seperator-line-header"></div>
   <main>
-
-    <form onsubmit="sendMail(event)">
-
-
-      <label>Dein Name:
-        <input class="text-box" type="text" required />
-      </label>
-      <label>
-        Deine Email:
-        <input class="text-box" type="email" name="email">
-      </label>
-      <label>
-        Deine Nachricht:
-        <textarea rows="10"  name="message"></textarea>
-      </label>
-      
-      <input class="abschicken" type="submit" value="Abschicken" />
-    </form>
+<h1>Deine Email wurder versendet</h1>
   </main>
 
   <footer>
@@ -74,20 +57,5 @@
   </footer>
 
 </body>
-<script>function sendMail(event){
-    event.preventDefault();
-    const data = new FormData(event.target);
 
-    fetch("https://formspree.io/f/xldljbqv", {
-        method: "POST",
-        body: new FormData(event.target),
-        headers: {
-            'Accept': 'application/json'
-        }
-    }).then(() => {
-        window.location.href = "./send-mail.html";
-    }).catch((error) => {
-        console.log(error);
-    });
-}</script>
 </html>
