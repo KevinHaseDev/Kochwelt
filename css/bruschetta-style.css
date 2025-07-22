@@ -365,10 +365,6 @@ footer {
     font-size: 16px;
 }
 
-.preparation {
-    margin-bottom: 0;
-}
-
 .padding-bottom {
     padding-bottom: 40px;
 }
@@ -445,7 +441,8 @@ footer {
     .preparation {
         padding-left: 20px;
         padding-right: 20px;
-    }
+    } 
+}
 
     @media(max-width: 470px) {
         .input-container {
