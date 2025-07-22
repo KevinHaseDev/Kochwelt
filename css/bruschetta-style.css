@@ -314,16 +314,12 @@ footer {
     font-size: 16px;
 }
 
-.preparation {
-    margin-bottom: 0;
-}
-
 .padding-bottom {
     padding-bottom: 40px;
 }
 
 @media(max-width:800px) {
-     header {
+    header {
         padding-right: 20px;
         padding-left: 20px;
     }
