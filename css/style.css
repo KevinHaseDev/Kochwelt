@@ -71,6 +71,10 @@ header a:hover {
     text-underline-offset: 8px;
 }
 
+main {
+    margin-top: 20px;
+}
+
 .seperator-line-header {
     background-color: #efefef;
     object-fit: cover;
@@ -291,39 +295,60 @@ footer {
 
     header {
         padding-right: 20px;
+        padding-left: 20px;
     }
 
     .burger {
         display: flex;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1100;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 10px;
+
     }
 
     .links {
         display: none;
-        text-align: end;
-        flex-direction: column;
-        position: absolute;
+        position: fixed;
         top: 60px;
-        right: 10px;
+        right: 20px;
+        height: 130px;
         background: white;
-        padding-top: 5px;
-        gap: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        gap: 10px;
+        flex-direction: column;
+        text-align: right;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        z-index: 1090;
     }
 
-    nav.links.open {
+    .links.open {
         display: flex;
+        transition: max-height 0.3s ease-in-out;
+        overflow: hidden;
     }
 
 }
 
 @media(max-width:770px) {
     .section-one {
-        display: flex;
+
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
     }
 
     .section-one-img {
@@ -335,6 +360,8 @@ footer {
     .Section-one-title {
         padding: 0;
         text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -375,6 +402,11 @@ footer {
     .kevin {
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .button-to-rezept {
+        width: 166.48px;
+        height: 34px;
     }
 }
 
