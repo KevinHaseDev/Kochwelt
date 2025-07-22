@@ -89,10 +89,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
     font-size: 18px;
     flex: 1;
+    height: 100vh;
 
 
 }
@@ -159,16 +158,13 @@ textarea {
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     padding: 80px;
     background-color: #403b3b;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 
 }
 
