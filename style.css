@@ -317,10 +317,16 @@ footer {
     padding-top: 10px;
 }
 
-
 .h4-padding {
     padding-top: 20px;
 }
+
+.link-style:hover {
+    color: #008000;
+    font-weight: bold;
+}
+
+
 
 
 /* impressum */
