@@ -8,7 +8,7 @@
   <title>Kontakt</title>
   <link rel="icon" href="./img/logo_small.png" type="image/png">
   <script src="rechner.js"></script>
-  
+
 
 
 </head>
@@ -29,7 +29,7 @@
           <a href="./index.html">Start</a>
           <a href="./pizza-recipe.html">Rezept des Tages</a>
           <a href="./kontakt.html">Kontakt</a>
-          <a href="./docs/impressum.pdf" target="_blank">Impressum</a>
+          <a href="./impressum.html" target="_blank">Impressum</a>
         </nav>
       </div>
     </header>
@@ -49,9 +49,9 @@
       </label>
       <label>
         Deine Nachricht:
-        <textarea rows="10"  name="message"></textarea>
+        <textarea rows="10" name="message"></textarea>
       </label>
-      
+
       <input class="abschicken" type="submit" value="Abschicken" />
     </form>
   </main>
@@ -68,26 +68,27 @@
         <img src="./img/icons/youtube.svg" alt="YouTube logo" class="social-media" /></a>
     </div>
     <div class="legal-section">
-      <a href="./docs/datenschutz.pdf" class="data-privacy" target="_blank">Datenschutz</a>
-      <a href="./docs/impressum.pdf" class="imprint" target="_blank">Impressum</a>
+      <a href="./datenschutz.html" class="data-privacy" target="_blank">Datenschutz</a>
+      <a href="./impressum.html" class="imprint" target="_blank">Impressum</a>
     </div>
   </footer>
 
 </body>
-<script>function sendMail(event){
+<script>function sendMail(event) {
     event.preventDefault();
     const data = new FormData(event.target);
 
     fetch("https://formspree.io/f/xldljbqv", {
-        method: "POST",
-        body: new FormData(event.target),
-        headers: {
-            'Accept': 'application/json'
-        }
+      method: "POST",
+      body: new FormData(event.target),
+      headers: {
+        'Accept': 'application/json'
+      }
     }).then(() => {
-        window.location.href = "./send-mail.html";
+      window.location.href = "./send-mail.html";
     }).catch((error) => {
-        console.log(error);
+      console.log(error);
     });
-}</script>
+  }</script>
+
 </html>
