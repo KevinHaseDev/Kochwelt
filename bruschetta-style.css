@@ -103,7 +103,7 @@ h1 {
 }
 
 .recipe {
-    background-image: url(/img/gourmet-5619887_640.jpg);
+    background-image: url(./img/gourmet-5619887_640.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -114,7 +114,7 @@ h1 {
 }
 
 .recipe-penne {
-    background-image: url(/img/pasta-arrabiata.jpg);
+    background-image: url(./img/pasta-arrabiata.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -125,7 +125,7 @@ h1 {
 }
 
 .recipe-tiramisu {
-    background-image: url(/img/tiramisu.jpg);
+    background-image: url(./img/tiramisu.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -136,7 +136,7 @@ h1 {
 }
 
 .recipe-pizza {
-    background-image: url(/img/pizza-frutti-di-mare.jpg);
+    background-image: url(./img/pizza-frutti-di-mare.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -147,7 +147,7 @@ h1 {
 }
 
 .recipe-panna-cotta {
-    background-image: url(/img/panna-cotta.jpg);
+    background-image: url(./img/panna-cotta.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -384,6 +384,13 @@ footer {
         z-index: 1100;
     }
 
+    header a:hover {
+        color: green;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+        text-underline-offset: 1px;
+    }
+
     nav {
         display: flex;
         flex-direction: column;
@@ -418,12 +425,6 @@ footer {
         gap: 10px;
     }
 
-    .input-container {}
-
-    /* #calculate {
-        flex: 1;
-    } */
-
     .res-input {
         flex: 1;
     }
@@ -441,17 +442,17 @@ footer {
     .preparation {
         padding-left: 20px;
         padding-right: 20px;
-    } 
+    }
 }
 
-    @media(max-width: 470px) {
-        .input-container {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .res-input {
-            padding-top: 10px;
-            width: 100%;
-        }
+@media(max-width: 470px) {
+    .input-container {
+        flex-direction: column;
+        align-items: flex-start;
     }
+
+    .res-input {
+        padding-top: 10px;
+        width: 100%;
+    }
+}
