@@ -321,9 +321,20 @@ footer {
     padding-top: 20px;
 }
 
+.link-style {
+    text-decoration: none;
+}
+
 .link-style:hover {
     color: #008000;
     font-weight: bold;
+    text-decoration: underline;
+    transition: color 125ms ease-in-out;
+
+}
+
+address {
+    font-style: normal;
 }
 
 
