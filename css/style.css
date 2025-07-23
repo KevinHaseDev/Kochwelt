@@ -15,7 +15,7 @@
 
 html {
     scroll-behavior: smooth;
-    
+
 }
 
 
@@ -40,7 +40,8 @@ html {
     border-radius: 1px solid black;
 
 }
-.content-limitation-header{
+
+.content-limitation-header {
     display: flex;
     justify-content: center;
 }
@@ -89,11 +90,13 @@ main {
     object-fit: cover;
     height: 4px;
 }
+
 /*section one*/
-.content-limitation-one{
+.content-limitation-one {
     display: flex;
     justify-content: center;
 }
+
 .section-one {
     display: flex;
     justify-content: center;
@@ -139,13 +142,14 @@ main {
 }
 
 /*section two*/
-.section-two{
+.section-two {
     display: flex;
     justify-content: center;
     background-color: #efefef;
 }
+
 .kevin {
-    
+
     padding: 20px 120px;
     max-width: 1440px;
     width: 100%;
@@ -183,21 +187,22 @@ figcaption {
 }
 
 /*Section three*/
-.imra{
+.imra {
     display: flex;
     justify-content: center;
-    
+
 }
+
 .headline-good-to-know {
     text-align: center;
     margin-top: 80px;
-    
+
 }
 
 .good-to-know {
     padding: 0 120px 100px 120px;
     max-width: 1440px;
-   
+
 }
 
 .good-to-know-img {
@@ -224,8 +229,8 @@ figcaption {
 
 /* Footer  */
 
-.content-limitation{
-    
+.content-limitation {
+
     width: 100%;
     display: flex;
     justify-content: center;
@@ -240,27 +245,28 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+
 }
 
 .social-media-container {
     display: flex;
     justify-content: space-around;
-    gap: 30px;}
+    gap: 30px;
+}
 
 .social-media {
     width: 40px;
     height: auto;
     filter: invert(100%) brightness(200%);
     transition: filter 125ms ease;
-    
+
 }
 
 .social-media:hover,
 .social-media:focus {
     filter: drop-shadow(0px 0px 5px #f7f5f3);
 }
-    
+
 
 .legal-section {
     display: flex;
@@ -268,7 +274,7 @@ footer {
     gap: 40px;
     padding-top: 30px;
     border-radius: 6px;
-    transition: background-color 125ms ease, color 125ms ease-in-out; 
+    transition: background-color 125ms ease, color 125ms ease-in-out;
 }
 
 .legal-section a {
@@ -285,10 +291,42 @@ footer {
     filter: drop-shadow(0px 0px 5px #f7f5f3);
 }
 
+/* datenschutz */
+
+#generator-results {
+    padding: 20px 120px 60px 120px;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.h2-padding,
+.h3-padding {
+    text-align: left;
+    padding-top: 50px;
+    margin-bottom: 10px;
+}
+
+.h2-padding-bottom {
+    text-align: left;
+    padding: 50px 0 0 0;
+    margin: 0;
+}
+
+.h3-padding-top {
+    padding-top: 10px;
+}
+
+
+.h4-padding {
+    padding-top: 20px;
+}
+
 
 /* impressum */
 .padding-impressum {
-    padding: 20px;
+    padding: 20px 120px 60px 120px;
+    max-width: 1440px;
+    width: 100%;
 }
 
 .impr {
